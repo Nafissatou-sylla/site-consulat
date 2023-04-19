@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -15,11 +16,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?int $id = null;
 
+    #[ORM\Column(length: 50)]
+    private ?string $nom = null;
+
+    #[ORM\Column(length: 50)]
+    private ?string $prenom = null;
+
+    #[ORM\Column(nullable: true)]
+    private ?int $numeroDeTelephonene = null;
+
     #[ORM\Column(length: 180, unique: true)]
     private ?string $email = null;
-
-    #[ORM\Column]
-    private array $roles = [];
 
     /**
      * @var string The hashed password
@@ -27,15 +34,60 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?string $password = null;
 
-    #[ORM\Column(length: 50)]
-    private ?string $nom = null;
+    #[ORM\Column(type: Types::DATE_MUTABLE)]
+    private ?\DateTimeInterface $dateDeNaissance = null;
 
     #[ORM\Column(length: 50)]
-    private ?string $prenom = null;
+    private ?string $lieuDeNaissance = null;
+
+    #[ORM\Column(length: 50)]
+    private ?string $paysDeNaissance = null;
+
+    #[ORM\Column]
+    private array $roles = [];
+
+    #[ORM\ManyToOne(inversedBy: 'users')]
+    private ?Addresse $refAddress = null;
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getNom(): ?string
+    {
+        return $this->nom;
+    }
+
+    public function setNom(string $nom): self
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    public function getPrenom(): ?string
+    {
+        return $this->prenom;
+    }
+
+    public function setPrenom(string $prenom): self
+    {
+        $this->prenom = $prenom;
+
+        return $this;
+    }
+
+    public function getNumeroDeTelephonene(): ?int
+    {
+        return $this->numeroDeTelephonene;
+    }
+
+    public function setNumeroDeTelephonene(?int $numeroDeTelephonene): self
+    {
+        $this->numeroDeTelephonene = $numeroDeTelephonene;
+
+        return $this;
     }
 
     public function getEmail(): ?string
@@ -58,25 +110,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function getUserIdentifier(): string
     {
         return (string) $this->email;
-    }
-
-    /**
-     * @see UserInterface
-     */
-    public function getRoles(): array
-    {
-        $roles = $this->roles;
-        // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
-
-        return array_unique($roles);
-    }
-
-    public function setRoles(array $roles): self
-    {
-        $this->roles = $roles;
-
-        return $this;
     }
 
     /**
@@ -103,26 +136,72 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         // $this->plainPassword = null;
     }
 
-    public function getNom(): ?string
+
+    public function getDateDeNaissance(): ?\DateTimeInterface
     {
-        return $this->nom;
+        return $this->dateDeNaissance;
     }
 
-    public function setNom(string $nom): self
+    public function setDateDeNaissance(\DateTimeInterface $dateDeNaissance): self
     {
-        $this->nom = $nom;
+        $this->dateDeNaissance = $dateDeNaissance;
 
         return $this;
     }
 
-    public function getPrenom(): ?string
+    public function getLieuDeNaissance(): ?string
     {
-        return $this->prenom;
+        return $this->lieuDeNaissance;
     }
 
-    public function setPrenom(string $prenom): self
+    public function setLieuDeNaissance(string $lieuDeNaissance): self
     {
-        $this->prenom = $prenom;
+        $this->lieuDeNaissance = $lieuDeNaissance;
+
+        return $this;
+    }
+
+    public function getPaysDeNaissance(): ?string
+    {
+        return $this->paysDeNaissance;
+    }
+
+    public function setPaysDeNaissance(string $paysDeNaissance): self
+    {
+        $this->paysDeNaissance = $paysDeNaissance;
+
+        return $this;
+    }
+
+
+    /**
+     * @see UserInterface
+     */
+    public function getRoles(): array
+    {
+        $roles = $this->roles;
+        // guarantee every user at least has ROLE_USER
+        $roles[] = 'ROLE_USER';
+
+        return array_unique($roles);
+    }
+
+    public function setRoles(array $roles): self
+    {
+        $this->roles = $roles;
+
+        return $this;
+    }
+
+
+    public function getRefAddress(): ?Addresse
+    {
+        return $this->refAddress;
+    }
+
+    public function setRefAddress(?Addresse $refAddress): self
+    {
+        $this->refAddress = $refAddress;
 
         return $this;
     }
