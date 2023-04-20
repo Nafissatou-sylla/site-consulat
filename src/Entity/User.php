@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -48,6 +50,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\ManyToOne(inversedBy: 'users')]
     private ?Addresse $refAddress = null;
+
+    #[ORM\ManyToMany(targetEntity: Role::class, inversedBy: 'users')]
+    private Collection $refRole;
+
+    public function __construct()
+    {
+        $this->refRole = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -202,6 +212,30 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setRefAddress(?Addresse $refAddress): self
     {
         $this->refAddress = $refAddress;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Role>
+     */
+    public function getRefRole(): Collection
+    {
+        return $this->refRole;
+    }
+
+    public function addRefRole(Role $refRole): self
+    {
+        if (!$this->refRole->contains($refRole)) {
+            $this->refRole->add($refRole);
+        }
+
+        return $this;
+    }
+
+    public function removeRefRole(Role $refRole): self
+    {
+        $this->refRole->removeElement($refRole);
 
         return $this;
     }

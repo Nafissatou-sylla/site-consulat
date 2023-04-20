@@ -20,7 +20,7 @@ class UserType extends AbstractType
             ->add('dateDeNaissance')
             ->add('lieuDeNaissance')
             ->add('paysDeNaissance')
-            ->add('roles')
+            //->add('roles')
             ->add('refAddress')
         ;
     }
