@@ -19,9 +19,6 @@ class UserType extends AbstractType
             ->add('numeroDeTelephonene')
             ->add('email', EmailType::class)
             ->add('password')
-            ->add('dateDeNaissance')
-            ->add('lieuDeNaissance')
-            ->add('paysDeNaissance')
            
         ;
     }
