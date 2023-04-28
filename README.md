@@ -5,18 +5,18 @@ L’objectif de ce projet est de développer un site web innovant, dynamique et 
 
 Choix technique
 
-Langage de programmation: php version 8.2*
-Framework: symfony version 6.2*
-Base de donnée: MySql
+Langage de programmation: php version 8.2* \n
+Framework: symfony version 6.2* \n
+Base de donnée: MySql \n
 
-Les cas d’utilisations du site
-Création de compte
-prise de rendez-vous
-première demande de passeport
-renouvellement de passeport
-demande de carte consulaire
-acte de naissance
-demande visa pour les étrangers
+Les cas d’utilisations du site,
+Création de compte,
+prise de rendez-vous,
+première demande de passeport,
+renouvellement de passeport,
+demande de carte consulaire,
+acte de naissance,
+demande visa pour les étrangers,
 une page avec les différents ministères du consulat (ambassade, consulat des autres villes etc)
 
 
