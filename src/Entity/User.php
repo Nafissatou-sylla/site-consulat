@@ -36,15 +36,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?string $password = null;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
-    private ?\DateTimeInterface $dateDeNaissance = null;
-
-    #[ORM\Column(length: 50)]
-    private ?string $lieuDeNaissance = null;
-
-    #[ORM\Column(length: 50)]
-    private ?string $paysDeNaissance = null;
-
+   
     #[ORM\Column]
     private array $roles = [];
 
@@ -144,43 +136,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
-    }
-
-
-    public function getDateDeNaissance(): ?\DateTimeInterface
-    {
-        return $this->dateDeNaissance;
-    }
-
-    public function setDateDeNaissance(\DateTimeInterface $dateDeNaissance): self
-    {
-        $this->dateDeNaissance = $dateDeNaissance;
-
-        return $this;
-    }
-
-    public function getLieuDeNaissance(): ?string
-    {
-        return $this->lieuDeNaissance;
-    }
-
-    public function setLieuDeNaissance(string $lieuDeNaissance): self
-    {
-        $this->lieuDeNaissance = $lieuDeNaissance;
-
-        return $this;
-    }
-
-    public function getPaysDeNaissance(): ?string
-    {
-        return $this->paysDeNaissance;
-    }
-
-    public function setPaysDeNaissance(string $paysDeNaissance): self
-    {
-        $this->paysDeNaissance = $paysDeNaissance;
-
-        return $this;
     }
 
 

@@ -31,18 +31,7 @@
                 <th>Password</th>
                 <td>{{ user.password }}</td>
             </tr>
-            <tr>
-                <th>DateDeNaissance</th>
-                <td>{{ user.dateDeNaissance ? user.dateDeNaissance|date('Y-m-d') : '' }}</td>
-            </tr>
-            <tr>
-                <th>LieuDeNaissance</th>
-                <td>{{ user.lieuDeNaissance }}</td>
-            </tr>
-            <tr>
-                <th>PaysDeNaissance</th>
-                <td>{{ user.paysDeNaissance }}</td>
-            </tr>
+           
             <tr>
                 <th>Roles</th>
                 <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
