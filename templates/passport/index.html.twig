@@ -1,28 +1,10 @@
 {% extends 'base.html.twig' %}
-<!DOCTYPE html>
-<html lang="fr-FR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            {%block titre%} PREMIÈRE DEMANDE DE PASSEPORT {%endblock%}
-        </title>
-
+        {%block titre%} PREMIÈRE DEMANDE DE PASSEPORT {%endblock%}
+      
         {%block css%}{%endblock%}
-    </head>
 
-<body>  
-  <header id="header">
-    <nav class="nav-container id="nav-mobile">
-        <div class="nav-text"> </div>
-        <div class="nav-wrap container"> </div>
-    </nav>
-    </header>
 
-    <div class="container text-center">
-		{%block body%}{%endblock%}
-	</div>
-  
+	{%block body%}
     <div class="container" id="page">
         <div class="container-inner">
             <div class="main">
@@ -88,9 +70,4 @@
         </div><!--/.container-inner-->
     </div><!--/.container-->
 
-    <footer id="footer"> </footer><!--/#footer-->
-
-{%block scripts%}{%endblock%}
-
-</body>
-</html>
+{%endblock%}
