@@ -1,0 +1,69 @@
+
+{% extends './home/base.html.twig' %}
+
+  {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+{%block body%}    
+<main> 
+    <div class="special-container m-5">
+
+        <div class="container">
+            <h2 style="text-align:center">DEMANDE DE CARTE D’IDENTITÉ</h2>
+            <div class="col-sm-1 close-col">
+                    <span class="flash-close">
+                        <svg class="icon icon-close" width="20" height="20">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-popup-close"></use>
+                        </svg>
+                    </span>
+            </div>
+          
+          <div class="container-fluid small guide-consulaire ">
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="{{ path('app_servicesauxsenegalais') }}">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_cni') }}"">Carte d'Identité ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              Demande de carte d'identité
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="text-align:center">
+       Le Consulat Général du Sénégal à Marseille informe les compatriotes que le Centre d’établissement des cartes nationales d’identité du Consulat Général<br>
+       de Paris est désormais fonctionnel pour l’établissement des cartes nationales d’identité biométriques CEDEAO.
+       <div class="separator">              </div>
+       <br>
+       Ainsi, les compatriotes désireux de se faire établir ladite carte sont priés de prendre rendez-vous via** le site internet du Consulat Général du Sénégal à Paris : <a href="https://consulsen-paris.gouv.sn/">consulsen-paris.gouv.sn/</a> et se munir d’une somme de dix (10) euros** pour l’acquittement d’une quittance pour toute demande d’enrôlement:<br>
+
+
+  - Copie de la CNI numérisée ou du passeport biométrique ou de l’extrait de naissance de l’intéressé.<br><br>
+
+  Le Consulat Général du Sénégal à Marseille se chargera de transmettre le dossier au Ministère de l’intérieur et de la Sécurité publique.
+
+</div>
+  {% include 'footer.html.twig' %}
+  {% block scripts %}     {% endblock %}
+ </main>
+ {%endblock%}
+
