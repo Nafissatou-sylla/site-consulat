@@ -1,0 +1,68 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire ">
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="{{ path('app_servicesauxsenegalais') }}">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              Documents de voyage
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 style="text-align:center">Documents de voyage</h2>
+<br><br>
+          <div class="card-deck" style="text-align:center" m-5>
+            <div class="card">
+              <img class="card-img-top" src="https://i0.wp.com/www.curiositymag.com/wp-content/uploads/2019/06/senegal-passport.jpeg?resize=560%2C301&ssl=1" alt="Première demande de passeport">
+              <div class="card-body">
+              <h5 class="card-title">Première demande de passeport</h5>
+              
+          </div>
+       </div>
+       <div class="card" >
+         <img style="width:'20'; height:'20'" class="card-img-top" src="https://www.dynseo.com/wp-content/uploads/2021/09/jeux-intelligents-pour-les-enfants-VF-480x480.png" alt="Renouvellement de passeport">
+         <div class="card-body">
+           <h5 class="card-title">Renouvellement de passeport</h5>
+
+         </div>
+       </div>
+       <div class="card">
+         <img class="card-img-top" src="https://th.bing.com/th/id/OIP.nyxnRQYV4qMZaGaW96vFSwHaFU?pid=ImgDet&rs=1" alt="Sauf conduit">
+         <div class="card-body">
+           <h5 class="card-title">Sauf Conduit</h5>
+
+         </div>
+       </div>
+       </div>
+     
+     <!-- ---------------------------------------------------- -->
+          {% include 'footer.html.twig' %}
+                {% block scripts %}      {% endblock %}
+
+     </body>
+
+     {% endblock %}
+     
+     
+           

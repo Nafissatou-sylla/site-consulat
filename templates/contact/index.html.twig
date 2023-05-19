@@ -1,0 +1,40 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+
+{% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+
+<div class="container">
+<br>
+   <h2>Nous Contacter</h2>
+<br><br>
+<div style="font-size:30">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+   <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+</svg> Adresse : 446 Avenue Prado, 13008Marseille (France)</div><br>
+<div style="font-size:30"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+   <path d="M3 7l9 6l9 -6"></path>
+</svg> Email : contact@consulsen-marseille.org</div><br>
+<div style="font-size:30"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+</svg> Tél. : (+33) 04 91 47 35 49<br><br><br></div>
+</div>
+<div class="container">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.211692999601!2d5.380843810597485!3d43.26794067714426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c744d638637d%3A0x88af50d243949536!2s446%20Av.%20du%20Prado%2C%2013008%20Marseille!5e0!3m2!1sfr!2sfr!4v1684483768293!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>  </div>
+
+
+
+ {% include 'footer.html.twig' %}
+                {% block scripts %}      {% endblock %}
+
+     </body>
+   
+{% endblock %}

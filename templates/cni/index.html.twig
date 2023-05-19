@@ -1,0 +1,51 @@
+
+{% extends './home/base.html.twig' %}
+
+  {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+{%block body%}    
+<main> 
+    <div class="special-container m-5">
+
+        <h2>Carte d'Identité</h2>
+        <div class="card-deck">
+          <div class="card">
+          <img class="card-img-top" src="https://th.bing.com/th/id/OIP.KIIYMCLscIa5nGbIjqm3zgAAAA?w=233&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Demande d'Immatriculation">
+          <div class="card-body">
+           <h5 class="card-title">Demande d'Immatriculation</h5>
+           <p class="card-text">Pour tout ressortissant sénégalais n’ayant pas encore 5 ans</p>
+           <a class="goto-link" href="{{ path('app_immatriculation') }}">Consulter-></a>
+         </div>
+       </div>
+       <div class="card">
+         <img class="card-img-top" src="https://consulsen-paris.gouv.sn/wp-content/uploads/2022/11/cni-1.png" alt="Demande de Carte d'Identité">
+         <div class="card-body">
+           <h5 class="card-title">Demande de Carte d'Identité</h5>
+           <p class="card-text">Pour tout ressortissant sénégalais âgé d’au moins 5 ans</p>
+           <a class="goto-link" href="{{ path('app_demandecartedidentite') }}">Consulter-></a>
+         </div>
+       </div>
+       <div class="card">
+         <img class="card-img-top" src="https://senegalembassy.co.za/wp-content/uploads/2019/01/carte_biometrique_0_0.jpg" alt="Retrait de carte d'Identité">
+         <div class="card-body">
+           <h5 class="card-title">Retrait de carte d'Identité</h5>
+           <a class="goto-link" href="{{path('app_retraitdecartedidentite')}}">Consulter-></a>
+        </div>
+       </div>     
+     </div>
+     
+     <!-- ---------------------------------------------------- -->
+     
+     <div class="separator"></div>
+         
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     {% include 'footer.html.twig' %}
+     {% block scripts %}     {% endblock %}
+ 
+
+</main>
+     {%endblock%}
+

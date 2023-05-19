@@ -1,0 +1,62 @@
+
+{% extends './home/base.html.twig' %}
+
+  {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+{%block body%}    
+<main> 
+    <div class="special-container m-5">
+
+        <div class="container">
+            <h2 style="text-align:center">RETRAIT DE CARTE D’IDENTITÉ</h2>
+            <div class="col-sm-1 close-col">
+                    <span class="flash-close">
+                        <svg class="icon icon-close" width="20" height="20">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-popup-close"></use>
+                        </svg>
+                    </span>
+            </div>
+          
+          <div class="container-fluid small guide-consulaire ">
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="{{ path('app_servicesauxsenegalais') }}">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_cni') }}"">Carte d'Identité ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              Retrait de carte d'identité
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="text-align:center">
+       Nous vous rappelons que le Consulat ne dispose pas de centre de production de carte d’identité nationale (contrairement pour les passeports), les cartes d’identité sont fabriquées à Dakar avant d’être envoyées au Consulat.
+
+De ce fait, le Consulat n’a aucune maitrise sur les délais d’obtention des dites cartes (contrairement aux passeports dont nous garantissons la mise à disposition en quelques jours maximum).
+Merci d’en tenir compte.
+</div>
+  {% include 'footer.html.twig' %}
+  {% block scripts %}     {% endblock %}
+ </main>
+ {%endblock%}
+
