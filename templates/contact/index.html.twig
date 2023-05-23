@@ -7,25 +7,84 @@
 <body class="path-frontpage page-node-type-homepage">
 
 <div class="container">
-<br>
-   <h2>Nous Contacter</h2>
-<br><br>
-<div style="font-size:30">
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-   <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
-</svg> Adresse : 446 Avenue Prado, 13008Marseille (France)</div><br>
-<div style="font-size:30"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
-   <path d="M3 7l9 6l9 -6"></path>
-</svg> Email : contact@consulsen-marseille.org</div><br>
-<div style="font-size:30"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
-</svg> Tél. : (+33) 04 91 47 35 49<br><br><br></div>
-</div>
+
+   <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Vous avez besoin de contacter les services consulaires ?</p>
+        </div>
+        <div class="row gx-lg-0 gy-4">
+          <div class="col-lg-4">
+            <div class="info-container d-flex flex-column align-items-center justify-content-center">
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Adresse:</h4>
+                  <p>446 Avenue du prado</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>contact@consulsen-marseille.org</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Téléphone:</h4>
+                  <p>+33 491 98 44 83</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h4>Horaires d'ouvertures:</h4>
+                  <p>Du lundi au Vendredi: de 09h à 13h et de 14h à 17h</p>
+                </div>
+              </div><!-- End Info Item -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Prénom" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nom" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Adresse email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet du message" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Chargement</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Votre message a bien été envoyé. Merci!</div>
+              </div>
+              <div class="text-center"><button type="submit">Envoyer un message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
 <div class="container">
  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.211692999601!2d5.380843810597485!3d43.26794067714426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c744d638637d%3A0x88af50d243949536!2s446%20Av.%20du%20Prado%2C%2013008%20Marseille!5e0!3m2!1sfr!2sfr!4v1684483768293!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
  </div>  </div>
