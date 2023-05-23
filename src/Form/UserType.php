@@ -6,8 +6,6 @@ use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Form\Extension\Core\Type\EmailType;
-
 
 class UserType extends AbstractType
 {
@@ -16,10 +14,9 @@ class UserType extends AbstractType
         $builder
             ->add('nom')
             ->add('prenom')
-            ->add('numeroDeTelephonene')
-            ->add('email', EmailType::class)
+            ->add('telephone')
+            ->add('email')
             ->add('password')
-           
         ;
     }
 
