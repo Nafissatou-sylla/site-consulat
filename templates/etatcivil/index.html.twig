@@ -1,0 +1,82 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="/">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              Etat-civil
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+
+
+          <!-- ======= Our Services Section ======= -->
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Etat Civil</h2>
+        </div>
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-3 col-md-5">
+            <div class="service-item  position-relative">
+              <img class="card-img-top" src="{{asset('assets/img/cconsulaire.png')}}" alt="img">
+              <h3>Carte consulaire</h3>
+
+              <a href="{{path('app_carteconsulaire')}}" class="goto-link">Consulter<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <div class="service-item position-relative">
+             <img class="card-img-top" src="{{asset('assets/img/certificatdecoutume.jpg')}}" alt="Certificat de coutume">
+              <h3>Certificat de coutume</h3>
+              <a href="{{path('app_certificat_de_coutume')}}" class="goto-link">Consulter<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <div class="service-item position-relative">
+              <img class="card-img-top" src="{{asset('assets/img/trnais.png')}}" alt="Transcription de naissance">
+              <h3>Transcription de naissance</h3>
+              <a href="{{path('app_transcription_de_naissance')}}" class="goto-link">Consulter<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-xl-3 col-md-5">
+            <div class="service-item position-relative">
+              <img class="card-img-top" src="{{asset('assets/img/laiss.jpg')}}" alt="Laissez-passer mortuaire">
+              <h3>Laissez-passer mortuaire</h3>
+              <a href="{{path('app_laissezpassermortuaire')}}" class="goto-link">Consulter<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section><!-- End Our Services Section ==== -->
+     </body>
+
+     {% endblock %}
+     
+     
+           
