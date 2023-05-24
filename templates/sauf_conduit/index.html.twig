@@ -1,90 +1,123 @@
 {% extends './home/base.html.twig' %}
+ {% block titre %}Carte Consulaire {% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
 
-   
-    {%block titre%} SAUF-CONDUIT {%endblock%}
-     
-    {%block css%}{%endblock%}
-    
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="/">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_documentsdevoyage') }}">Documents de voyage</a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                                Sauf conduit
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
 
- 
- 
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Sauf conduit</h2>
+        </div>
+        
+        <!-- ==================================================================================  -->
 
+        <!-- benefit sections -->
+            <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
 
-{%block body%}
+    <div id="attachements1" class="py-2 maeci__attachements">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div><br><br>
+                                  <img class="small-card__img ajust-big-img" src="{{asset('assets/img/infos.jpg')}}" alt="Infos" width=100px height=100px;">
+                                  <h3 class="small-card__title">Infos</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text">
+                        <p><strong>Le sauf-conduit est un document de voyage délivré exceptionnellement à un Sénégalais qui ne dispose pas d’un autre document de voyage valable.</strong> Il est valable pour un voyage allé simple de l’étranger vers le Sénégal.
+                        Note : Le sauf-conduit doit être demandé au plutôt 10 jours avant votre départ. <br>Le sauf-conduit est délivré au plus tôt à une semaine de la date du voyage. (Photocopies en double exigée.) <strong>Sans titre républicain, l'enfant ne pourra pas revenir en France.</strong>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
 
-    <div class="container" id="page">
-        <div class="container-inner">
-            <div class="main">
-                <div class="main-inner group">
-                    <main class="content" id="content">
-                        <div class="page-title hu-pad group">
-                            <h1>SAUF-CONDUIT</h1>
-                        </div>
-                        <div class="hu-pad group">     
-                            <article class="group post-31 page type-page status-publish hentry">   
-                                <div class="entry themeform">                              
-                                    <p><strong>Le sauf-conduit est un document de voyage délivré 
-                                        exceptionnellement à un Sénégalais qui ne dispose pas d’un autre 
-                                        document de voyage valable.</strong> </p>
-                                    <p>Il est valable pour un voyage allé simple de l’étranger vers le Sénégal.
-                                        <br>Note&nbsp;: Le sauf-conduit doit être demandé au plutôt 10 jours 
-                                        avant votre départ</p>
-                                    <p><strong>Documents à fournir&nbsp;:</strong></p>
-                                    <ul>
-                                        <li> 4 photos d'identité </li>
-                                        <ul> <strong>Une pièce d'identité </strong>                        
-                                        <li>Photocopie du passeport OU, </li> 
-                                        <li>Photocopie de la carte d’identité sénégalaise, ou extrait de naissance,
-                                            ou de la carte consulaire 
-                                            (l’original de la pièce devra être présenté)</li> </ul>
-                                        <li>Photocopie du billet d’avion ou de la réservation</li>                       
-                                </ul>
+    <div id="attachements2" class="py-2 maeci__attachements grey-bg ">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div><br><br><br><br><br><br><br><br><br><br>
+                                  <img class="small-card__img ajust-big-img" src="https://www.consulat.ma/sites/default/files/2018-08/Docu-a-fournir_3.png" alt="doc" data-pagespeed-url-hash="4292431242" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                  <h3 class="small-card__title">Pièces à fournir</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text" style="background-primary">
+                    <div class="section-header">                    
+                            <p>4 photos d'identité<br>
+                              Une pièce d'identité<br>
+                              Photocopie du passeport OU,<br>
+                              Photocopie de la carte d’identité sénégalaise, ou extrait de naissance, ou de la carte consulaire (l’original de la pièce devra être présenté)<br>
+                              Photocopie du billet d’avion ou de la réservation</div>
+                    <div class="section-header">
+                        <h2>Pour les enfants mineurs</h2>                  
+                           <p>4 photos d'identité<br>
+                           Une pièce d'identité<br>
+                           Photocopie du passeport OU,<br>
+                           Photocopie de la carte d’identité sénégalaise, ou extrait de naissance, ou de la carte consulaire (l’original de la pièce devra être présenté)<br>
+                           Photocopie du billet d’avion ou de la réservation<br>
+                           Autorisation parentale <strong>signée et légalisée</strong> par le père (Modèle ci-après )<br>
+                           Photocopie de la pièce d’identité sénégalaise du père<br>
+                           Titre Républicain ou Titre de Circulation<br><br></p>
+                           <p><a href="https://consulsen-paris.gouv.sn/wp-content/uploads/2022/08/autorisation_parentale.pdf" target="_blank" rel="noreferrer noopener">AUTORISATION PARENTALE</a><br><br></p>
+                           <h3> FORMULAIRE </h3>
+                              <p><strong> Il vous est demandé d’imprimer et remplir le formulaire ci-dessous avant de vous présenter au Consulat : </p>
+                              <a href="https://consulsen-paris.gouv.sn/wp-content/uploads/2022/08/formulaire_sauf_conduit.pdf">Formulaire de demande de sauf-conduit</a>
+                        </div>     
+                    </div>
 
-                                <ul>
-                                    <li><strong>Pour les enfants mineurs</strong></li>
-                                </ul>
-                                <ul>
-                                    <li> 4 photos d'identité </li>
-                                    <ul> <strong>Une pièce d'identité </strong>                        
-                                        <li>Photocopie du passeport OU, </li> 
-                                        <li>Photocopie de la carte d’identité sénégalaise, ou extrait de naissance,
-                                            ou de la carte consulaire 
-                                            (l’original de la pièce devra être présenté)</li> </ul>
-                                        <li>Photocopie du billet d’avion ou de la réservation</li>
-                                        <li>Autorisation parentale&nbsp;<strong>signée et légalisée</strong>&nbsp;par le père (Modèle ci-après )</li>
-                                        <li>&nbsp;Photocopie de la pièce d’identité sénégalaise du père</li>
-                                        <li>Titre Républicain ou Titre de Circulation </li>
-                                 </ul>
+                </div>
 
-                                <p><a href="http://localhost/consulatparis/wp-content/uploads/2022/07/autorisation_parentale.pdf">AUTORISATION PARENTALE</a></p>
+            </div>
 
-                                <p><strong>FORMULAIRE&nbsp;:</strong></p>
-                                <p><strong>&nbsp;Il vous est demandé d’imprimer et remplir le formulaire ci-dessous avant de vous présenter au Consulat<br>Formulaire de demande de sauf-conduit</strong>&nbsp;:</p>
-                                <p><a href="http://consulsen-paris.gouv.sn/wp-content/uploads/2022/08/formulaire_sauf_conduit.pdf" target="_blank" rel="noreferrer noopener">Formulaire Sauf conduit</a></p>
-                                <p><strong>Formulaire de demande de sauf conduit consulat général du Sénégal à Marseille</strong></p>
-                                   <nav class="pagination group">
-                                            </nav><!--/.pagination-->
-                                    <div class="clear"></div>
-                                    </div><!--/.entry-->
+        </div>
 
-                                </article>
-                                    <p><strong>NOTE&nbsp;:</strong></p>
-                                    <p>Le sauf-conduit est délivré au plus tôt à une semaine de la date du voyage.
-                                        (Photocopies en double exigée.) <strong> Sans titre républicain, l'enfant ne pourra pas revenir en France.<strong>
-                                    
-                                    </p>
-                   
-                        
-                                    <nav class="pagination group"> </nav><!--/.pagination-->
-                                    <div class="clear"> </div>
-                                </div><!--/.entry-->
-                            </article>
-                        </div><!--/.hu-pad-->
-                    </main><!--/.content-->
-                </div><!--/.main-inner-->
-            </div><!--/.main-->
-        </div><!--/.container-inner-->
-    </div><!--/.container-->
+        
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;
+border-top:none !important">
 
     <footer id="footer"> </footer><!--/#footer-->
 

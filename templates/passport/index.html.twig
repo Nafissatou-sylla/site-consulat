@@ -1,73 +1,134 @@
-{% extends 'base.html.twig' %}
-        {%block titre%} PREMIÈRE DEMANDE DE PASSEPORT {%endblock%}
-      
-        {%block css%}{%endblock%}
+{% extends './home/base.html.twig' %}
+ {% block titre %}Carte Consulaire {% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="/">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_documentsdevoyage') }}">Documents de voyage</a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                                Passeport
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Première Demande de passeport</h2>
+        </div>
+        
+        <!-- ==================================================================================  -->
+
+        <!-- benefit sections -->
+            <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements1" class="py-2 maeci__attachements">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div>
+                                  <img class="small-card__img ajust-big-img" src="{{asset('assets/img/infos.jpg')}}" alt="Infos" width=100px height=100px;">
+                                  <h3 class="small-card__title">Infos</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text">
+                        <p>Le dépôt et le retait se font sur place</p>
+                        <p>Le délai de délivrance d’un passeport biométrique ordinaire est en moyenne d'1 à 2 mois <br>Validité du passeport : La validité du passeport biométrique est de 5 ans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements2" class="py-2 maeci__attachements grey-bg ">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div><br><br><br><br><br><br><br><br><br><br>
+                                  <img class="small-card__img ajust-big-img" src="https://www.consulat.ma/sites/default/files/2018-08/Docu-a-fournir_3.png" alt="doc" data-pagespeed-url-hash="4292431242" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                  <h3 class="small-card__title">Pièces à fournir</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text" style="background-primary">
+                    <div class="section-header">
+                     <h2>SÉNÉGALAIS NÉ EN EUROPE</h2>
+                    
+                            <p>Carte nationale d’identité biométrique CEDEAO (Originale + 2 copies Recto/Verso);<br>
+                               Extrait de naissance moins d’1 an<br>
+                               Photocopie pièce d'identité des 2 parents (PASSEPORT ou CNI) 2 copies<br>
+                               Un justificatif de domicile (Facture EDF, quittance de loyer etc…);<br>
+                               Un timbre d’une valeur de 30,50 euros (paiement sur place, en espèce ou par carte bancaire)</div>
+                    <div class="section-header">
+                        <h2>SÉNÉGALAIS NÉ AU SÉNÉGAL</h2>                  
+                        Carte nationale d’identité biométrique CEDEAO (Originale + 2 copies)<br>
+                        Extrait de naissance de moins d'1 an<br>
+                        Copie littérale moins d’un ans copie plus originale<br>
+                        Photocopie pièce d'identité des 2 parents (PASSEPORT ou CNI) 2 copies. En cas de décès une copie du certificat de décès<br>
+                        Certificat de nationalité sénégalaise légalisée par Greffe du tribunal<br>
+                        Un justificatif de domicile (Facture EDF, quittance de loyer etc…);<br>
+                        Un timbre d’une valeur de 30,50 euros (paiement sur place, en espèce ou par carte bancaire).<br>                        
+                        </div>     
+                    <div class="section-header">
+                        <h2>POUR L’ENFANT ÂGÉ DE 0 À 5 ANS</h2>                  
+                        La fiche d’immatriculation nationale (délivrée par le service carte nationale d’identité)<br>
+                        Extrait de naissance de moins d’1 an<br>
+                        Autorisation parentale signée et légalisée du père (ou de la mère si celle-ci exerce l’autorité parentale suite à une décision judiciaire);<br>
+                        NB: la présence du signataire est obligatoire pour la légalisation de l’autorisation parentale;<br>
+                        Pièce d’identité sénégalaise du parent autorisant (copie recto/verso);<br>
+                        Justificatif de domicile (Facture EDF, quittance de loyer etc…);<br>
+                        Un timbre d’une valeur de 30,50 euros (paiement sur place, en espèce ou par carte bancaire).<br>                        
+                    </div>                        
 
 
-	{%block body%}
-    <div class="container" id="page">
-        <div class="container-inner">
-            <div class="main">
-                <div class="main-inner group">
-                    <main class="content" id="content">
-                        <div class="page-title hu-pad group">
-                            <br><br><h1>PREMIÈRE DEMANDE DE PASSEPORT</h1>
-                        </div>
-                        <div class="hu-pad group">     
-                            <article class="group post-27 page type-page status-publish hentry">
-                                <div class="entry themeform">
-                                    <h3>
-                                    <strong>Documents à fournir pour une première demande de passeport biométrique</strong>
-                                    </h3>
-                                    <p><strong>SÉNÉGALAIS NÉ EN EUROPE</strong></p>
-                                    <ul>
-                                        <li>Carte nationale d’identité biométrique CEDEAO (Originale + 2 copies Recto/Verso);</li>
-                                        <li> Extrait de naissance moins d’1 an </li>
-                                        <li> Photocopie pièce d'identité des 2 parents (PASSEPORT ou CNI)  2 copies </li>
-                                        <li>Un justificatif de domicile (Facture EDF, quittance de loyer etc…);</li>
-                                        <li>Un timbre d’une valeur de 30,50 euros (paiement sur place, <strong>en espèce ou par carte bancaire</strong>).</li>
-                                    </ul>
+                    </div>
 
-                                    <p><strong>SÉNÉGALAIS NÉ AU SÉNÉGAL</strong></p>
-                                    <ul>
-                                        <li>Carte nationale d’identité biométrique CEDEAO (Originale + 2 copies) </li>
-                                        <li>Extrait de naissance de moins d'1 an </li>
-                                        <li> Copie littérale moins d’un ans copie plus originale </li>
-                                        <li> Photocopie pièce d'identité des 2 parents (PASSEPORT ou CNI)  2 copies. En cas de décès une copie du certificat de décès </li>
-                                        <li> Certificat de nationalité sénégalaise légalisée par Greffe du tribunal </li>
-                                        <li>Un justificatif de domicile (Facture EDF, quittance de loyer etc…);</li>
-                                        <li>Un timbre d’une valeur de 30,50 euros (paiement sur place, <strong>en espèce ou par carte bancaire</strong>).</li>
-                                    </ul>
-                                    
-                                    <p><strong>POUR L’ENFANT ÂGÉ DE 0 À 5 ANS</strong></p>
-                                    <ul>
-                                        <li>La fiche d’immatriculation nationale (délivrée par le service carte nationale d’identité)</li>
-                                        <li>Extrait de naissance de moins d’1 an</li>
-                                        <li><a rel="noreferrer noopener" href=autorisation_parentale.pdf" target="_blank">Autorisation parentale</a> <strong>signée et légalisée</strong> du père (ou de la mère si celle-ci exerce l’autorité parentale suite à une décision judiciaire);</li>
-                                        <li><strong>NB</strong>: la présence du signataire est obligatoire pour la légalisation de l&#8217;autorisation parentale;</li>
-                                        <li>Pièce d’identité sénégalaise du parent autorisant (copie recto/verso);</li>
-                                        <li>Justificatif de domicile (Facture EDF, quittance de loyer etc…);</li>
-                                        <li>Un timbre d’une valeur de 30,50 euros (paiement sur place, <strong>en espèce ou par carte bancaire</strong>).</li>
-                                    </ul>
-                                    
-                                    <p><strong>NOTE&nbsp;:</strong></p>
-                                    <p>Le délai de délivrance d’un passeport biométrique ordinaire 
-                                        est en moyenne d'1 à 2 mois
-                                        <br>Validité du passeport&nbsp;:<br>
-                                        La validité du passeport biométrique est de 5 ans.
-                                    </p>
-                   
+                </div>
 
-                        
-                                    <nav class="pagination group"> </nav><!--/.pagination-->
-                                    <div class="clear"> </div>
-                                </div><!--/.entry-->
-                            </article>
-                        </div><!--/.hu-pad-->
-                    </main><!--/.content-->
-                </div><!--/.main-inner-->
-            </div><!--/.main-->
-        </div><!--/.container-inner-->
-    </div><!--/.container-->
+            </div>
 
+        </div>
+
+        
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;
+border-top:none !important">
+
+    <footer id="footer"> </footer><!--/#footer-->
+
+{%block scripts%}{%endblock%}
 {%endblock%}
