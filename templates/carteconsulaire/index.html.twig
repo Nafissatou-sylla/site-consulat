@@ -1,50 +1,121 @@
-{% extends 'base.html.twig' %}
+{% extends './home/base.html.twig' %}
+ {% block titre %}Carte Consulaire {% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
 
-{%block titre%} Carte Consulaire {%endblock%}
-{%block css%}{%endblock%}
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="/">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_etatcivil') }}">Etat civil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                                carte consulaire
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
 
-{%block body%}
-    <div class="container" id="page">
-        <div class="container-inner">
-            <div class="main">
-                <div class="main-inner group">
-                    <main class="content" id="content">
-                        <div class="page-title hu-pad group">
-                            <h1>Carte Consulaire</h1>
-                        </div>
-                        <div class="hu-pad group">     
-                            <article class="group post-33 page type-page status-publish hentry">   
-                                <div class="entry themeform">                                        
-                                    <p><strong>DOCUMENTS À FOURNIR</strong></p>
-                                     <p><h4>Pour le majeur</h4></p>
-                                        <ul>
-                                            <li>Carte d'Identité Sénégalaise (Copie Recto Verso) OU </li>
-                                            <li>Passeport Sénégalais (Copie des deux premières pages)&nbsp;<strong>en cours de validité + Extrait de naissance</strong></li>
-                                            <li>4 Photos d'Identité&nbsp;<strong>Récentes</strong>,&nbsp;<strong>Identiques&nbsp;</strong>&nbsp;.</li>
-                                            <li>Justificatif de domicile.</li>                               
-                                        </ul>
-                                        <p><h4>Pour le mineur</h4></p>
-                                        <ul>
-                                            <li> Extrait de naissance ou CNI</li>
-                                            <li>Pièce d'Identité nationale en cours de validité de l'un des parents </li>
-                                            <li>4 Photos d'Identité&nbsp.</li>
-                                            <li>Justificatif de domicile.</li>                               
-                                        </ul>
-                                    <p><strong>NB</strong>:&nbsp;</p>
-                                    <p>Le titulaire de la carte consulaire doit en cas de retour définitif au sénégal retourner cette carte
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Carte Consulaire</h2>
+        </div>
+        
+        <!-- ==================================================================================  -->
+
+        <!-- benefit sections -->
+            <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements1" class="py-2 maeci__attachements">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div>
+                                  <img class="small-card__img ajust-big-img" src="{{asset('assets/img/infos.jpg')}}" alt="Infos" width=100px height=100px;">
+                                  <h3 class="small-card__title">Infos</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text">
+                        <p>Le dépôt et le retait se font sur place</p>
+                        Télécharger le formulaire <a href="https://consulsen-paris.gouv.sn/wp-content/uploads/2022/11/Form.-Carte-Consulaire.pdf"> Ici</a><br>
+                        <p>Le titulaire de la carte consulaire doit en cas de retour définitif au sénégal retourner cette carte
                                     au Consulat. Il peut bénéficier, s'il le désire d'un certificat de déménagement qui lui permettra de rapatrier
-                                    tous ses effets personnels afin de bénéficier de franchises douanières. </p>
-                                    <nav class="pagination group">
-                                                </nav><!--/.pagination-->
-                                        <div class="clear"></div>
-                                        </div><!--/.entry-->
-                                    </article>
-                      </div><!--/.hu-pad-->
-                    </main><!--/.content-->
-                </div><!--/.main-inner-->
-            </div><!--/.main-->
-        </div><!--/.container-inner-->
-    </div><!--/.container-->
+                                    tous ses effets personnels afin de bénéficier de franchises douanières.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements2" class="py-2 maeci__attachements grey-bg ">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div><br><br><br><br><br><br>
+                                  <img class="small-card__img ajust-big-img" src="https://www.consulat.ma/sites/default/files/2018-08/Docu-a-fournir_3.png" alt="doc" data-pagespeed-url-hash="4292431242" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                  <h3 class="small-card__title">Pièces à fournir</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text">
+                    <div class="section-header">
+                     <h2>Pour le majeur</h2>
+                    
+                            <p>Carte d'Identité Sénégalaise (Copie Recto Verso) OU<br>
+                            Passeport Sénégalais (Copie des deux premières pages)&nbsp;<strong>en cours de validité + Extrait de naissance</strong><br>
+                            4 Photos d'Identité&nbsp;<strong>Récentes</strong>,&nbsp;<strong>Identiques&nbsp;</strong>&nbsp;.<br>
+                            Justificatif de domicile.</div>
+                       <div class="section-header">
+          <h2>Pour le mineur</h2>                  
+        Extrait de naissance ou CNI<br>
+        Pièce d'Identité nationale en cours de validité de l'un des parents <br>
+        4 Photos d'Identité&nbsp.<br>
+        Justificatif de domicile.<br>                               
+        </div>                        
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;
+border-top:none !important">
 
     <footer id="footer"> </footer><!--/#footer-->
 
