@@ -1,29 +1,17 @@
-
 {% extends './home/base.html.twig' %}
-
-  {% block titre %}{% endblock %}
+ {% block titre %}Carte Consulaire {% endblock %}
   {% block css %}{% endblock %}
-{%block body%}    
-<main> 
-    <div class="special-container m-5">
+      {% block body %}
 
-        <div class="container">
-            <h2 style="text-align:center">DEMANDE D’IMMATRICULATION</h2>
-            <div class="col-sm-1 close-col">
-                    <span class="flash-close">
-                        <svg class="icon icon-close" width="20" height="20">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-popup-close"></use>
-                        </svg>
-                    </span>
-            </div>
-          
-          <div class="container-fluid small guide-consulaire ">
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
             <div class="breadcrumbs container" style="text-align:left">
                 <div class="row">
                     <div class="col-10">
                         <ul class="list" style="color:grey">
                             <li class="list-inline-item">
-                              <a class="goto-link" href="{{ path('app_servicesauxsenegalais') }}">Accueil ></a>
+                              <a class="goto-link" href="/">Accueil ></a>
                                 <svg class="icon list__icon" width="12" height="12">
                                   <use xlink:href="#icon-arrow-down"></use>
                                 </svg>
@@ -35,43 +23,87 @@
                                 </svg>
                             </li>
                             <li class="list-inline-item">
-                              <a href="{{path('app_cni') }}"">Carte d'Identité ></a>
+                              <a href="{{path('app_cni') }}">carte d'identité ></a>
                                 <svg class="icon list__icon" width="12" height="12">
                                   <use xlink:href="#icon-arrow-down"></use>
                                 </svg>
                             </li>
                             <li class="list-inline-item">
-                              Demande d'Immatriculation
+                                Immatriculation
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+<br><br>
+
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Demande d'Immatriculation</h2>
+        </div>
+        
+        <!-- ==================================================================================  -->
+
+        <!-- benefit sections -->
+            <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements1" class="py-2 maeci__attachements">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div>
+                                  <img class="small-card__img ajust-big-img" src="{{asset('assets/img/infos.jpg')}}" alt="Infos" width=100px height=100px;">
+                                  <h3 class="small-card__title">Infos</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text">
+                        <p><br>LA DEMANDE D’IMMATRICULATION PERMET À L’ENFANT DE MOINS DE 5 ANS PAS ENCORE ÉLIGIBLE À LA CARTE D’IDENTITÉ D’OBTENIR UN NUMÉRO D’IDENTIFICATION NATIONALE AFIN D’EFFECTUER UNE DEMANDE DE PASSEPORT. <br>Qui est concerné :
+Tout ressortissant sénégalais n’ayant pas encore 5 ans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container" style="text-align:center">
-        <h3>Demande d’immatriculation pour enfant de moins de 5 ans</h3>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
 
-        <p>LA DEMANDE D’IMMATRICULATION PERMET À L’ENFANT DE MOINS DE 5 ANS PAS ENCORE ÉLIGIBLE À LA CARTE D’IDENTITÉ D’OBTENIR UN NUMÉRO D’IDENTIFICATION NATIONALE AFIN D’EFFECTUER UNE DEMANDE DE PASSEPORT.
+    <div id="attachements2" class="py-2 maeci__attachements grey-bg ">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div><br>
+                                  <img class="small-card__img ajust-big-img" src="https://www.consulat.ma/sites/default/files/2018-08/Docu-a-fournir_3.png" alt="doc" data-pagespeed-url-hash="4292431242" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                  <h3 class="small-card__title">Pièces à fournir</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text">
+                    <div class="section-header">
+                     <h2>Pour enfant de moins de 5 ans</h2>
+                        <p>Un extrait de naissance transcrit issu de la transcription de l’acte de naissance français au consulat voir ici de moins de 12 mois (Original)<br>
+                         La copie d’une pièce d’identité ou un passeport sénégalais en cours de validité du père ou de la mère. <br>
+                         Délais : Il faut compter 1 mois pour obtenir le document.</div>
+                    </div>
 
-        Qui est concerné : <br>
+                </div>
 
-        Tout ressortissant sénégalais n’ayant pas encore 5 ans <br>
-        Horaires :<br>
+            </div>
 
-        Du lundi au vendredi de 9h à 17h</p>
-        <p>Modalités :<br>
+        </div>
 
-        Il faut vous présenter avec RDV au service carte nationale d’identité (1er étage) et déposer les documents suivants :
-        – Un extrait de naissance transcrit issu de la transcription de l’acte de naissance français au consulat voir ici de moins de 12 mois (Original)
-        – La copie d’une pièce d’identité ou un passeport sénégalais en cours de validité du père ou de la mère.
-    Délais :
-
-    Il faut compter 1 mois pour obtenir le document.
+        
     </div>
-</div>
-  {% include 'footer.html.twig' %}
-  {% block scripts %}     {% endblock %}
- </main>
- {%endblock%}
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;
+border-top:none !important">
 
+    <footer id="footer"> </footer><!--/#footer-->
+
+{%block scripts%}{%endblock%}
+{%endblock%}

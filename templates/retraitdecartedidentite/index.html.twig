@@ -1,29 +1,17 @@
-
 {% extends './home/base.html.twig' %}
-
-  {% block titre %}{% endblock %}
+ {% block titre %}Carte Consulaire {% endblock %}
   {% block css %}{% endblock %}
-{%block body%}    
-<main> 
-    <div class="special-container m-5">
+      {% block body %}
 
-        <div class="container">
-            <h2 style="text-align:center">RETRAIT DE CARTE D’IDENTITÉ</h2>
-            <div class="col-sm-1 close-col">
-                    <span class="flash-close">
-                        <svg class="icon icon-close" width="20" height="20">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-popup-close"></use>
-                        </svg>
-                    </span>
-            </div>
-          
-          <div class="container-fluid small guide-consulaire ">
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
             <div class="breadcrumbs container" style="text-align:left">
                 <div class="row">
                     <div class="col-10">
                         <ul class="list" style="color:grey">
                             <li class="list-inline-item">
-                              <a class="goto-link" href="{{ path('app_servicesauxsenegalais') }}">Accueil ></a>
+                              <a class="goto-link" href="/">Accueil ></a>
                                 <svg class="icon list__icon" width="12" height="12">
                                   <use xlink:href="#icon-arrow-down"></use>
                                 </svg>
@@ -35,28 +23,70 @@
                                 </svg>
                             </li>
                             <li class="list-inline-item">
-                              <a href="{{path('app_cni') }}"">Carte d'Identité ></a>
+                              <a href="{{path('app_cni') }}">Carte d'identité ></a>
                                 <svg class="icon list__icon" width="12" height="12">
                                   <use xlink:href="#icon-arrow-down"></use>
                                 </svg>
                             </li>
                             <li class="list-inline-item">
-                              Retrait de carte d'identité
+                                Retrait de Carte d'Identité
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+<br><br>
+
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Retrait de carte d'Identité</h2>
+        </div>
+        
+        <!-- ==================================================================================  -->
+
+        <!-- benefit sections -->
+            <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements1" class="py-2 maeci__attachements">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div>
+                                  <img class="small-card__img ajust-big-img" src="{{asset('assets/img/infos.jpg')}}" alt="Infos" width=100px height=100px;">
+                                  <h3 class="small-card__title">Infos</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text">
+                        <p>Nous vous rappelons que le Consulat ne dispose pas de centre de production de carte d’identité nationale (contrairement pour les passeports), les cartes d’identité sont fabriquées à Dakar avant d’être envoyées au Consulat. De ce fait, le Consulat n’a aucune maitrise sur les délais d’obtention des dites cartes (contrairement aux passeports dont nous garantissons la mise à disposition en quelques jours maximum). Merci d’en tenir compte.</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container" style="text-align:center">
-       Nous vous rappelons que le Consulat ne dispose pas de centre de production de carte d’identité nationale (contrairement pour les passeports), les cartes d’identité sont fabriquées à Dakar avant d’être envoyées au Consulat.
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
 
-De ce fait, le Consulat n’a aucune maitrise sur les délais d’obtention des dites cartes (contrairement aux passeports dont nous garantissons la mise à disposition en quelques jours maximum).
-Merci d’en tenir compte.
-</div>
-  {% include 'footer.html.twig' %}
-  {% block scripts %}     {% endblock %}
- </main>
- {%endblock%}
+    <div id="attachements2" class="py-2 maeci__attachements grey-bg ">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            
+                             
+                    </div>
+                   
 
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <footer id="footer"> </footer><!--/#footer-->
+
+{%block scripts%}{%endblock%}
+{%endblock%}
