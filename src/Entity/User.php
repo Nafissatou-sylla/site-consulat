@@ -36,6 +36,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?int $telephone = null;
 
+    #[ORM\ManyToOne]
+    private ?Addresse $refAddress = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -138,6 +141,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setTelephone(int $telephone): self
     {
         $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    public function getRefAddress(): ?Addresse
+    {
+        return $this->refAddress;
+    }
+
+    public function setRefAddress(?Addresse $refAddress): self
+    {
+        $this->refAddress = $refAddress;
 
         return $this;
     }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<title>Addresse</title>
+
+{% block body %}
+    <h1>Addresse</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ addresse.id }}</td>
+            </tr>
+            <tr>
+                <th>NumeroDeRue</th>
+                <td>{{ addresse.numeroDeRue }}</td>
+            </tr>
+            <tr>
+                <th>NomDeRue</th>
+                <td>{{ addresse.nomDeRue }}</td>
+            </tr>
+            <tr>
+                <th>CodePostal</th>
+                <td>{{ addresse.codePostal }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ addresse.ville }}</td>
+            </tr>
+            <tr>
+                <th>Pays</th>
+                <td>{{ addresse.pays }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_addresse_index') }}">back to list</a>
+
+    <a href="{{ path('app_addresse_edit', {'id': addresse.id}) }}">edit</a>
+
+    {{ include('addresse/_delete_form.html.twig') }}
+{% endblock %}
