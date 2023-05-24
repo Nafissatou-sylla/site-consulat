@@ -17,6 +17,9 @@ class UserType extends AbstractType
             ->add('nom')
             ->add('prenom')
             ->add('telephone')
+            ->add('dateDeNaissance')
+            ->add('lieuDeNaissance')
+            ->add('paysDeNaissance')
             ->add('email')
             ->add('password')         
         ;

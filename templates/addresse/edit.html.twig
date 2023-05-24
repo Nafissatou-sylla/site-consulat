@@ -1,9 +1,11 @@
+{% extends 'home/base.html.twig' %}
+
 <!DOCTYPE html>
 
-<title>Edit Addresse</title>
+{% block titre %} Les adresses {% endblock %}
 
 {% block body %}
-    <h1>Edit Addresse</h1>
+    <h1>Modifier  l'adresse</h1>
 
     {{ include('addresse/_form.html.twig', {'button_label': 'Update'}) }}
 

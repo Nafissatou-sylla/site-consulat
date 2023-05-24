@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -38,6 +39,15 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\ManyToOne]
     private ?Addresse $refAddress = null;
+
+    #[ORM\Column(type: Types::DATE_MUTABLE)]
+    private ?\DateTimeInterface $dateDeNaissance = null;
+
+    #[ORM\Column(length: 50)]
+    private ?string $lieuDeNaissance = null;
+
+    #[ORM\Column(length: 50)]
+    private ?string $paysDeNaissance = null;
 
     public function getId(): ?int
     {
@@ -153,6 +163,42 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setRefAddress(?Addresse $refAddress): self
     {
         $this->refAddress = $refAddress;
+
+        return $this;
+    }
+
+    public function getDateDeNaissance(): ?\DateTimeInterface
+    {
+        return $this->dateDeNaissance;
+    }
+
+    public function setDateDeNaissance(\DateTimeInterface $dateDeNaissance): self
+    {
+        $this->dateDeNaissance = $dateDeNaissance;
+
+        return $this;
+    }
+
+    public function getLieuDeNaissance(): ?string
+    {
+        return $this->lieuDeNaissance;
+    }
+
+    public function setLieuDeNaissance(string $lieuDeNaissance): self
+    {
+        $this->lieuDeNaissance = $lieuDeNaissance;
+
+        return $this;
+    }
+
+    public function getPaysDeNaissance(): ?string
+    {
+        return $this->paysDeNaissance;
+    }
+
+    public function setPaysDeNaissance(string $paysDeNaissance): self
+    {
+        $this->paysDeNaissance = $paysDeNaissance;
 
         return $this;
     }

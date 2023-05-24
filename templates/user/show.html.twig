@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+{% extends 'home/base.html.twig' %}
 
-<title>User</title>
+ {% block titre %} Voir{% endblock %}
 
 {% block body %}
     <h1>User</h1>
@@ -26,9 +26,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_user_index') }}">back to list</a>
+    <a href="{{ path('app_user_index') }}">retourner</a>
 
-    <a href="{{ path('app_user_edit', {'id': user.id}) }}">edit</a>
+    <a href="{{ path('app_user_edit', {'id': user.id}) }}">modifier</a>
 
     {{ include('user/_delete_form.html.twig') }}
 {% endblock %}
