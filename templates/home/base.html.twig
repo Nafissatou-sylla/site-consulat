@@ -38,10 +38,20 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#">Accueil</a></li>
+          <li><a href="/">Accueil</a></li>
           <li><a href="#">Services consulaires</a></li>
           <li><a href="{{path('app_annuaireconsulaire')}}">Annuaires consulaires</a></li>
           <li><a href="{{path('app_contact')}}">Contact</a></li>
+          <li> <li>
+                  <form role="search" method="get" class="search-form" action="https://consulsen-paris.gouv.sn/">
+				<label>
+					<input type="search" class="search-field" placeholder="Rechercher…" value="" name="s" style="width:120px"/>
+				</label>
+        
+        <button type="button" class="search-submit" style="background-color:white">
+          <i class="bi bi-search"></i>
+          </button>
+			</form>                </li>
         </ul>
       </nav><!-- .navbar -->
 
