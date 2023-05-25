@@ -7,7 +7,8 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use App\Form\AddresseType;
-use Symfony\Component\Form\Extension\Core\Type\CollectionType;
+use App\Form\FormationType;
+
 
 class UserType extends AbstractType
 {
@@ -21,7 +22,9 @@ class UserType extends AbstractType
             ->add('lieuDeNaissance')
             ->add('paysDeNaissance')
             ->add('email')
-            ->add('password')         
+            ->add('password')     
+            ->add('addresse',AddresseType::class) 
+            ->add('formation',FormationType::class)   
         ;
     }
 
