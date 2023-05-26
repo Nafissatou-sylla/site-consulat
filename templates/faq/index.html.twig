@@ -1,110 +1,79 @@
-<!DOCTYPE html>
+{% extends './home/base.html.twig' %}
+ {% block titre %}Carte Consulaire {% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
 
-<title>Questions/réponses</title>
-
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="container">
-   
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="content px-xl-5">
-              <h3>Frequently Asked <strong>Questions</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+        
+                      
+                </div>
             </div>
-          </div>
+        </div>
+<br><br>
 
-          <div class="col-lg-8">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>DIFFÉRENTES QUESTIONS QUE VOUS POSEZ SOUVENT:</h2>
+        </div>
+        
+        <!-- ==================================================================================  -->
 
-            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+        <!-- benefit sections -->
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    <span class="num">1.</span>
-                    Non consectetur a erat nam at lectus urna duis?
-                  </button>
-                </h3>
-                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                  </div>
+    <div id="attachements2" class="py-2 maeci__attachements grey-bg ">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+              <div class="section-header">
+                     <h2>MARIAGE</h2>
+                    
+                  <p><strong>La mairie me demande un certificat de capacité à mariage ?</strong><br>le certificat de capacité à mariage également appelé certificat de coutume au Consulat, est délivré par le service état civil voir ici <br>
+                  <strong>Puis-je obtenir le certificat de célibat au Consulat ?</srong><br></p>
+                  <p>Le certificat de célibat est délivré uniquement par votre de lieu de naissance.<br></p><br>
+                    <div class="section-header">
+                        <h2>NATIONALITÉ SÉNÉGALAISE</h2>      
+                        <strong>Mes deux parents sont de nationalité sénégalaise, que dois-je faire pour en bénéficier ?</strong><br>
+                        <p>Cela se fait en deux étapes :<br>
+
+–  Il faut demander la transcription de votre acte de naissance français. Pour ce faire vous venez au Consulat avec deux copies intégrales de votre acte de naissance français plus la pièce d’identité sénégalaise en cours de validité d’un de vos parents. Le jour même deux actes de naissances transcrit vous sont remis. Sachez que vous pouvez également faire cette démarche par correspondance. Il suffit pour cela d’envoyer les documents cités ci-dessus plus une enveloppe timbrée à votre adresse.
+
+  <br>–  Prendre RDV pour faire une demande de carte nationale d’identité sénégalaise ou une immatriculation si l’enfant à moins de 5 ans. 
+
+Une fois la carte nationale d’identité en votre possession vous prenez RDV pour faire un passeport biométrique.</p>                  
+                        </div>     
+                    <div class="section-header">
+                        <h2>Je veux donner ma nationalité sénégalaise à mon enfant ?</h2>   
+                        <p>–  Il faut tout d’abord effectuer la transcription de l’acte de naissance de votre enfant (né en France) voir ici <br>
+
+–  Si l’enfant à moins de 5 ans, il faut effectuer la demande d’immatriculation voir ici<br>
+
+–  S’il a plus de 5 ans faire une demande de carte nationale d’identité voir ici<br>
+
+–  Ensuite l’enfant peux avoir un passeport sénégalais voir ici                </p>                    
+                    </div>      
+                    <div class="section-header">
+                        <h2>Mon épouse ou époux est de nationalité sénégalaise, comment puis-je en bénéficier ?</h2>
+                        <p>Pour acquérir la nationalité sénégalaise via le mariage il faut se reprocher du Tribunal de Dakar, seul habilité à statuer sur ce type de demande</p></div>
+                    <div class="section-header">
+                        <h2>CARTE NATIONALE D’IDENTITE</h2>
+                        <strong>J’ai procédé à ma demande de carte nationale d’identité depuis quelques jours et j’attends toujours ma carte. Est-ce normal ?<strong>
+                        <p>Sachez la carte nationale d’identité n’est pas confectionnée à Paris mais à Dakar. Il est nécessaire d’attendre 1 à 3 mois avant que votre carte ne soit disponible.</p>
+                        </div>
+                    </div>
+
                 </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    <span class="num">2.</span>
-                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
-                  </button>
-                </h3>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                    <span class="num">3.</span>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
-                  </button>
-                </h3>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
-                    <span class="num">4.</span>
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-                  </button>
-                </h3>
-                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
-                    <span class="num">5.</span>
-                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
-                  </button>
-                </h3>
-                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
 
             </div>
 
-          </div>
         </div>
 
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
-</div>
-{% endblock %}
+        
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;
+border-top:none !important">
+
+    <footer id="footer"> </footer><!--/#footer-->
+
+{%block scripts%}{%endblock%}
+{%endblock%}

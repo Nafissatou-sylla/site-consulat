@@ -24,56 +24,64 @@
                 </div>
             </div>
         </div>
-        <h2 style="text-align:center">Choisir l'objet du Rendez-vous</h2>
+        <div class="section-header">
+        <h2>Espace de demande de Rendez-vous</h2></div>
+        
+        <h2 style="text-align:center">Prendre rendez-vous avec les services consulaires<br><br>Choisir l'objet du Rendez-vous</h2>
 <br><br>
-          <div class="card-deck" style="text-align:center" m-5>
-            <div class="card">
-              <img class="card-img-top" src="https://i0.wp.com/www.curiositymag.com/wp-content/uploads/2019/06/senegal-passport.jpeg?resize=560%2C301&ssl=1" alt="Service passeport">
-              <div class="card-body">
-              <h5 class="card-title">Service passeport</h5>
-              <a class="btn btn-primary" href="{{path('app_rdvpourpasseport')}}" role="button">Selectionner</a>
 
-              </div>
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-4 col-md-5">
+            <div class="service-item  position-relative">
+              <img class="card-img-top" src="https://i0.wp.com/www.curiositymag.com/wp-content/uploads/2019/06/senegal-passport.jpeg?resize=560%2C301&ssl=1"" width="150px" height="200px" alt="Service passeport">
+              <br><br><br><h3>Service passeport</h3>
+              <a class="btn btn" style="background-color:darkcyan; color:white" href="{{path('app_rdvpourpasseport')}}" role="button">Selectionner</a>
             </div>
-            <div class="card" >
-            <img style="width:'20'; height:'20'" class="card-img-top" src="https://www.dynseo.com/wp-content/uploads/2021/09/jeux-intelligents-pour-les-enfants-VF-480x480.png" alt="Service CNI">
-            <div class="card-body">
-            <h5 class="card-title">Service CNI</h5>
-            <a href="{{path('app_rdvpourcni')}}" class="btn btn-primary" role="button">Selectionner</a>
-           </div>
-       </div>
-       <div class="card">
-         <img class="card-img-top" src="https://th.bing.com/th/id/OIP.nyxnRQYV4qMZaGaW96vFSwHaFU?pid=ImgDet&rs=1" alt="Service Etat-civil">
-         <div class="card-body">
-           <h5 class="card-title">Service Etat-civil</h5>
-           <a href="{{path('app_rdvpouretatcivil')}}" class="btn btn-primary" role="button">Selectionner</a>
-         </div>
-       </div>
-       <div class="card">
-         <img class="card-img-top" src="https://th.bing.com/th/id/OIP.nyxnRQYV4qMZaGaW96vFSwHaFU?pid=ImgDet&rs=1" alt="Sauf conduit">
-         <div class="card-body">
-           <h5 class="card-title">Sauf Conduit</h5>
-           <a href="{{path('app_rdvpoursaufconduit')}}" class="btn btn-primary" role="button">Selectionner</a>
-         </div>
-       </div>
-       <div class="card">
-         <img class="card-img-top" src="https://th.bing.com/th/id/OIP.nyxnRQYV4qMZaGaW96vFSwHaFU?pid=ImgDet&rs=1" alt="Demande de visa">
-         <div class="card-body">
-           <h5 class="card-title">Demande de visa</h5>
-           <a class="btn btn-primary role="button" href="{{ path('app_rdvpourvisa') }}">Selectionner</a>
+          </div><!-- End Service Item -->
 
-         </div>
+          <div class="col-xl-4 col-md-5">
+            <div class="service-item position-relative">
+             <img class="card-img-top" src="{{asset('assets/img/cartes.webp')}}" width="150px" height="200px" alt="Service CNI">
+              <br><br><br><h3>Service CNI</h3>
+            <a href="{{path('app_rdvpourcni')}}" class="btn btn" style="background-color:darkcyan; color:white" role="button">Selectionner</a>
+            </div>
+          </div><!-- End Service Item -->
 
-       </div>       </div>
+          <div class="col-xl-4 col-md-5">
+            <div class="service-item position-relative">
+              <img class="card-img-top" src="{{asset('assets/img/etatcivil3.jpeg')}}" width="200px" height="200px" alt="Service Etat-civil">
+              <br><br><br><h3>Service Etat-civil</h3>
+           <a href="{{path('app_rdvpouretatcivil')}}" class="btn btn" style="background-color:darkcyan; color:white" role="button">Selectionner</a>
+            </div>
+          </div><!-- End Service Item -->
+          </div><br><br>
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-xl-4 col-md-5">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="https://th.bing.com/th/id/OIP.nyxnRQYV4qMZaGaW96vFSwHaFU?pid=ImgDet&rs=1" width="100px" height="200px" alt="Sauf conduit">
+                <br><br><h3>Sauf conduit</h3>
+              <a href="{{path('app_rdvpoursaufconduit')}}" class="btn btn" style="background-color:darkcyan; color:white" role="button">Selectionner</a>
+            </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-xl-4 col-md-5">
+            <div class="service-item position-relative">
+              <img class="card-img-top" src="https://www.musicinafrica.net/sites/default/files/images/article/201412/visa-senegal.jpg" width="150px" height="200px" alt="visa">
+              <br><br><h3>Demande de visa</h3>
+           <a class="btn btn" style="background-color:darkcyan; color:white" role="button" href="{{ path('app_rdvpourvisa') }}">Selectionner</a>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section><!-- End Our Services Section ====================================================================-->
 
+         
      
      <!-- ---------------------------------------------------- -->
-          {% include 'footer.html.twig' %}
-                {% block scripts %}      {% endblock %}
+      <footer id="footer"> </footer><!--/#footer-->
 
-     </body>
+{%block scripts%}{%endblock%}
+{%endblock%}
 
-     {% endblock %}
-     
      
            

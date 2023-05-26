@@ -1,0 +1,73 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}Carte Consulaire {% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="/">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_demandedevisa') }}">Services aux Etrangers ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              Pays africains 
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Pays africains dispensés de visa</h2>
+        </div>
+        
+
+
+          <ul style="text-align:left">
+
+          <li>Bénin,</li>
+            <li>Burkina Faso,</li>
+            <li>Cap-vert,</li>
+            <li>Congo (Brazzaville),</li>
+            <li>Côte d’Ivoire,</li>
+            <li>Gambie,</li>
+            <li>Ghana,</li>
+            <li>Guinée-Bissau,</li>
+            <li>Guinée Conakry,</li>
+            <li>Kenya,</li>
+            <li>Libéria,</li>
+            <li>Mali,</li>
+            <li>Maroc,</li>
+            <li>Mauritanie,</li>
+            <li>Niger,</li>
+            <li>Nigéria,</li>
+            <li>République Centrafricaine,</li>
+            <li>Sierra Leone,</li>
+            <li>Togo,</li>
+            <li>Tunisie</li>
+</div>        
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;
+border-top:none !important">
+
+    <footer id="footer"> </footer><!--/#footer-->
+
+{%block scripts%}{%endblock%}
+{%endblock%}

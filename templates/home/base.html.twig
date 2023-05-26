@@ -38,10 +38,20 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#">Accueil</a></li>
+          <li><a href="/">Accueil</a></li>
           <li><a href="#">Services consulaires</a></li>
           <li><a href="{{path('app_annuaireconsulaire')}}">Annuaires consulaires</a></li>
           <li><a href="{{path('app_contact')}}">Contact</a></li>
+          <li> <li>
+                  <form role="search" method="get" class="search-form" action="https://consulsen-paris.gouv.sn/">
+				<label>
+					<input type="search" class="search-field" placeholder="Rechercher…" value="" name="s" style="width:120px"/>
+				</label>
+        
+        <button type="button" class="search-submit" style="background-color:white">
+          <i class="bi bi-search"></i>
+          </button>
+			</form>                </li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -68,35 +78,7 @@
 
     <div class="icon-boxes position-relative">
       <div class="container position-relative">
-        <div class="row gy-4 mt-5">
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-easel"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">test1</a></h4>
-            </div>
-          </div><!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-gem"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">test2</a></h4>
-            </div>
-          </div><!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-geo-alt"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">test3</a></h4>
-            </div>
-          </div><!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-command"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">test4</a></h4>
-            </div>
-          </div><!--End Icon Box -->
+        
 
         </div>
       </div>
@@ -116,36 +98,36 @@
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
           <div class="col-xl-3 col-md-5">
             <div class="service-item  position-relative">
-              <img class="card-img-top" src="https://www.consulat.ma/sites/default/files/2018-08/passport_0.png" alt="Services aux Sénégalais">
+              <img class="card-img-top" src="https://www.consulat.ma/sites/default/files/2018-08/passport_0.png" width="150px" height="200px" alt="Services aux Sénégalais">
               <h3>Services aux Sénégalais</h3>
               <p>Documents de voyages, Etat-Civil , CNI, Immatriculation, Légalisation,...</p>
-              <a href="{{path('app_servicesauxsenegalais') }}" class="goto-link">Consulter<i class="bi bi-arrow-right"></i></a>
+              <a href="{{path('app_servicesauxsenegalais') }}" class="goto-link"><strong>Consulter <i class="bi bi-arrow-right"></i></strong></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-5">
             <div class="service-item position-relative">
-             <img class="card-img-top" src="https://www.musicinafrica.net/sites/default/files/images/article/201412/visa-senegal.jpg" alt="Services aux Etrangers">
+             <img class="card-img-top" src="https://www.musicinafrica.net/sites/default/files/images/article/201412/visa-senegal.jpg" width="150px" height="200px" alt="Services aux Etrangers">
               <h3>Services aux Etrangers</h3>
-              <p>Demande de visa</p>
-              <a href="{{path('app_demandedevisa')}}" class="goto-link">Consulter<i class="bi bi-arrow-right"></i></a>
+              <p>Demande de visa</p><br><br><br>
+              <a href="{{path('app_demandedevisa')}}" class="goto-link"><strong>Consulter <i class="bi bi-arrow-right"></i></strong></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-5">
             <div class="service-item position-relative">
-              <img class="card-img-top" src="https://www.ch-sudgironde.fr/wp-content/uploads/2021/09/RDV-EN-LIGNE-carte-d-identite-et-passeport_image_600x285.jpg" alt="Prendre RDV">
-              <h3>Prendre RDV avec le consulat</h3>
-              <p>Système de demande de Rendez-vous consulaire en ligne</p>
-              <a href="{{path('app_prisederdv')}}" class="goto-link">Consulter<i class="bi bi-arrow-right"></i></a>
+              <img class="card-img-top" src="https://www.ch-sudgironde.fr/wp-content/uploads/2021/09/RDV-EN-LIGNE-carte-d-identite-et-passeport_image_600x285.jpg" width="200px" height="225px" alt="Prendre RDV">
+              <h3>Prendre RDV</h3>
+              <p>Système de demande de Rendez-vous consulaire en ligne</p><br>
+              <a href="{{ path('app_objetdurdv') }}" class="goto-link"><strong>Consulter <i class="bi bi-arrow-right"></i></strong></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-5">
             <div class="service-item position-relative">
-              <img class="card-img-top" src="https://www.ocoeurdepassy.com/wp-content/uploads/2015/08/Gor%C3%A9e-MaisonEsclavesweb.jpg" alt="Visitez le Sénégal">
-              <h3>Visitez le Sénégal</h3>
-              <a href="https://www.visitezlesenegal.com/" title="Visitez le Sénégal" class="goto-link">Consulter<i class="bi bi-arrow-right"></i></a>
+              <img class="card-img-top" src="https://www.ocoeurdepassy.com/wp-content/uploads/2015/08/Gor%C3%A9e-MaisonEsclavesweb.jpg" width="150px" height="200px" alt="Visitez le Sénégal">
+              <h3>Visitez le Sénégal</h3><br><br><br><br><br>
+              <a href="https://www.visitezlesenegal.com/" title="Visitez le Sénégal" class="goto-link"><strong>Consulter <i class="bi bi-arrow-right"></i></strong></a>
             </div>
           </div><!-- End Service Item -->
         </div>
