@@ -30,12 +30,12 @@ class Addresse
     #[ORM\Column(length: 50)]
     private ?string $pays = null;
 
-    #[ORM\OneToMany(mappedBy: 'refAddress', targetEntity: User::class)]
-    private Collection $users;
+    #[ORM\OneToMany(mappedBy: 'adresse', targetEntity: User::class)]
+    private Collection $theUsers;
 
     public function __construct()
     {
-        $this->users = new ArrayCollection();
+        $this->theUsers = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -103,30 +103,31 @@ class Addresse
         return $this;
     }
 
+  
     /**
      * @return Collection<int, User>
      */
-    public function getUsers(): Collection
+    public function getTheUsers(): Collection
     {
-        return $this->users;
+        return $this->theUsers;
     }
 
-    public function addUser(User $user): self
+    public function addTheUser(User $theUser): self
     {
-        if (!$this->users->contains($user)) {
-            $this->users->add($user);
-            $user->setRefAddress($this);
+        if (!$this->theUsers->contains($theUser)) {
+            $this->theUsers->add($theUser);
+            $theUser->setAdresse($this);
         }
 
         return $this;
     }
 
-    public function removeUser(User $user): self
+    public function removeTheUser(User $theUser): self
     {
-        if ($this->users->removeElement($user)) {
+        if ($this->theUsers->removeElement($theUser)) {
             // set the owning side to null (unless already changed)
-            if ($user->getRefAddress() === $this) {
-                $user->setRefAddress(null);
+            if ($theUser->getAdresse() === $this) {
+                $theUser->setAdresse(null);
             }
         }
 

@@ -23,7 +23,7 @@ class UserType extends AbstractType
             ->add('paysDeNaissance')
             ->add('email')
             ->add('password')     
-            ->add('addresse',AddresseType::class) 
+            ->add('adresse',AddresseType::class) 
             ->add('formation',FormationType::class)   
         ;
     }

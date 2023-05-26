@@ -37,8 +37,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?int $telephone = null;
 
-    #[ORM\ManyToOne]
-    private ?Addresse $adresse = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE)]
     private ?\DateTimeInterface $dateDeNaissance = null;
@@ -49,9 +47,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 50)]
     private ?string $paysDeNaissance = null;
 
-    #[ORM\ManyToOne(inversedBy: 'users')]
+ 
+    #[ORM\ManyToOne(inversedBy: 'users', cascade: ['persist'])]
     private ?Formation $formation = null;
 
+    #[ORM\ManyToOne(inversedBy: 'theUsers' , cascade: ['persist'])]
+    private ?Addresse $adresse = null;
     public function getId(): ?int
     {
         return $this->id;
@@ -158,17 +159,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getAdresse(): ?Addresse
-    {
-        return $this->adresse;
-    }
 
-    public function setAdresse(?Addresse $adresse): self
-    {
-        $this->adresse = $adresse;
-
-        return $this;
-    }
 
     public function getDateDeNaissance(): ?\DateTimeInterface
     {
@@ -214,6 +205,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setFormation(?Formation $formation): self
     {
         $this->formation = $formation;
+
+        return $this;
+    }
+
+    public function getAdresse(): ?Addresse
+    {
+        return $this->adresse;
+    }
+
+    public function setAdresse(?Addresse $adresse): self
+    {
+        $this->adresse = $adresse;
 
         return $this;
     }
