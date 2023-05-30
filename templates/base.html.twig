@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
   <title>
     {%block title%}Consulat Génégal du Sénégal à Marseille{%endblock%}
   </title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,10 +59,6 @@
   </header><!-- End Header -->
   <!-- End Header -->
 
-  <div class="container text-center">
-		{%block body%}{%endblock%}
-	</div>
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
     <div class="container position-relative">
@@ -74,6 +71,10 @@
   </section>
   <!-- End Hero Section -->
 
+<!-- debut block body -->
+ <div class="container text-center">
+		{%block body%}
+
   <main id="main">
     <!-- ======= Our Services Section ======= -->
     <section id="services" class="services sections-bg">
@@ -84,8 +85,8 @@
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
           <div class="col-xl-3 col-md-5">
             <div class="service-item  position-relative">
-              <img class="card-img-top" src="passport_0.png" 
-                width="150px" height="200px" alt="Services aux Sénégalais">
+              <img class="card-img-top" src="https://www.consulat.ma/sites/default/files/2018-08/passport_0.png"
+               width="150px" height="200px" alt="Services aux Sénégalais">
               <h3>Services aux Sénégalais</h3>
               <p>Documents de voyages, Etat-Civil , CNI, Immatriculation, Légalisation,...</p>
               <a href="{{path('app_servicesauxsenegalais') }}" class="goto-link">
@@ -121,7 +122,7 @@
         </div>
       </div>
     </section><!-- End Our Services Section -->
-
+ 
   <section id="etudiant">
     <div class="container" data-aos="fade-up">        
       <h4>Si vous êtes étudiant, inscrivez-vous ici -> 
@@ -129,14 +130,15 @@
       </h4> 
     </div>
   </section> <!-- End #etudiant -->
-
+  
   </main><!-- End #main -->
 
- 
+<!-- fin block body>
+  {%endblock%}
+	</div>
+<!-- fin block body>
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader"></div>
+  {% include './footer.html.twig' %}
 
   <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -152,6 +154,4 @@
 {%block scripts%}{%endblock%}
 
 </body>
-  {% include './footer.html.twig' %}
-
 </html>
