@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>
-  {%block title%}Consulat Génégal du Sénégal à Marseille{%endblock%}</title>
+    {%block title%}Consulat Génégal du Sénégal à Marseille{%endblock%}
+  </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,17 +23,18 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/main.css')}}" rel="stylesheet">
-{%block css%}{%endblock%}
+
+  {%block css%}{%endblock%}
 </head>
 
 <body>
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="{{asset('assets/img/logo.jpg')}}" alt="logo" width="70" height="800">
-       
-        <span class="text-logo" style="text-align:left; color:#FFFFFF; font-size:15px">République du Sénégal<br>Un peuple - un But - <br>Une Foi<br></span>
+        <img src="{{asset('assets/img/logo.jpg')}}" alt="logo" width="70" height="800">      
+        <span class="text-logo" style="text-align:left; color:#FFFFFF; font-size:15px">
+          République du Sénégal<br>Un peuple - un But - <br>Une Foi<br>
+        </span>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
@@ -42,22 +42,18 @@
           <li><a href="#services">Services consulaires</a></li>
           <li><a href="{{path('app_annuaireconsulaire')}}">Annuaires consulaires</a></li>
           <li><a href="{{path('app_contact')}}">Contact</a></li>
-          <li> <li>
-                  <form role="search" method="get" class="search-form" action="/">
-				<label>
-					<input type="search" class="search-field" placeholder="Rechercher…" value="" name="s" style="width:120px"/>
-				</label>
-        
-        <button type="button" class="search-submit" style="background-color:white">
-          <i class="bi bi-search"></i>
-          </button>
-			</form>                </li>
+            <li>
+              <form role="search" method="get" class="search-form" action="/">
+				        <label>
+					        <input type="search" class="search-field" placeholder="Rechercher…" value="" name="s" style="width:120px"/>
+				        </label>        
+                <button type="button" class="search-submit" style="background-color:white">
+                  <i class="bi bi-search"></i>
+                </button>
+			        </form>                
+            </li>
         </ul>
       </nav><!-- .navbar -->
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
     </div>
   </header><!-- End Header -->
   <!-- End Header -->
@@ -75,16 +71,6 @@
         </div>         
       </div>
     </div>
-
-    <div class="icon-boxes position-relative">
-      <div class="container position-relative">
-        
-
-        </div>
-      </div>
-    </div>
-
-    </div>
   </section>
   <!-- End Hero Section -->
 
@@ -98,10 +84,12 @@
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
           <div class="col-xl-3 col-md-5">
             <div class="service-item  position-relative">
-              <img class="card-img-top" src="https://www.consulat.ma/sites/default/files/2018-08/passport_0.png" width="150px" height="200px" alt="Services aux Sénégalais">
+              <img class="card-img-top" src="passport_0.png" 
+                width="150px" height="200px" alt="Services aux Sénégalais">
               <h3>Services aux Sénégalais</h3>
               <p>Documents de voyages, Etat-Civil , CNI, Immatriculation, Légalisation,...</p>
-              <a href="{{path('app_servicesauxsenegalais') }}" class="goto-link"><strong>Consulter <i class="bi bi-arrow-right"></i></strong></a>
+              <a href="{{path('app_servicesauxsenegalais') }}" class="goto-link">
+                <strong>Consulter <i class="bi bi-arrow-right"></i></strong></a>
             </div>
           </div><!-- End Service Item -->
 
