@@ -11,6 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
+
 #[Route('/user')]
 class UserController extends AbstractController
 {
@@ -23,24 +24,25 @@ class UserController extends AbstractController
     }
 
     #[Route('/new', name: 'app_user_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, UserRepository $userRepository ,UserPasswordHasherInterface $passwordHasher): Response
+    public function new(Request $request, UserRepository $userRepository, UserPasswordHasherInterface $passwordHasher): Response
     {
         $user = new User();
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $hashedPassword = $passwordHasher->hashPassword($user,$user->getPassword());
-             $user->setPassword($hashedPassword);
+            $hashedPassword = $passwordHasher->hashPassword( $user,$user->getPassword());
+            $user->setPassword($hashedPassword);
             $userRepository->save($user, true);
 
-            return $this->redirectToRoute('app_login', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('app_user_index', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('user/new.html.twig', [
             'user' => $user,
             'form' => $form,
         ]);
+
     }
 
     #[Route('/{id}', name: 'app_user_show', methods: ['GET'])]
