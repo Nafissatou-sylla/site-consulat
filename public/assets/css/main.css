@@ -71,6 +71,8 @@ section {
 .section-header {
   text-align: center;
   padding-bottom: 60px;
+  color: #000000;
+
 }
 
 .section-header h2 {
@@ -79,6 +81,8 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #000000;
+
 }
 
 .section-header h2:after {
@@ -92,11 +96,14 @@ section {
   right: 0;
   bottom: 0;
   margin: auto;
+  color: #000000;
+
 }
 
 .section-header p {
   margin-bottom: 0;
-  color: #6f6f6f;
+  color: #000000;
+
 }
 
 /*--------------------------------------------------------------
