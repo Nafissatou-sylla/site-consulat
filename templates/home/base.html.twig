@@ -35,16 +35,16 @@
           <div class="col">
             <a class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="{{asset('assets/img/consulat.jpg')}}" alt="logo" width="500px">
+            <img src="{{asset('assets/img/consulat.jpg')}}" alt="logo" width="500px" height="80px">
           </a>
           </div>
           <div class="col">
-             <p style="text-align:center; color:#FFFFFF; font-size:30px; font-weight:bold">République du Sénégal<br> Un peuple - un But - Une Foi</p>
+             <p style="text-align:center; color:#FFFFFF; font-size:25px; font-weight:bold">République du Sénégal<br> Un peuple - un But - Une Foi</p>
           </div>
           <div class="col"> 
-            <img src="{{asset('assets/img/dr.png')}}" style="float:right" alt="drapeau" width="300px" height="150px">
+            <img src="{{asset('assets/img/dr.png')}}" style="float:right" alt="drapeau" width="300px" height="80px">
           </div>
-    </div>
+      </div>
     </div>
   </section>
   <!-- End Hero Section -->
@@ -55,15 +55,14 @@
           <li><a href="/">Accueil</a></li>
           <li class="dropdown"><a href="#"><span>Le Consulat</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Le consul Général</a></li>
-              <li><a href="#">Missions</a></li>
+              <li><a href="{{path('app_leconsulgeneral')}}">Le consul Général</a></li>
+              <li><a href="{{path('app_missions')}}">Missions</a></li>
               <li><a href="{{path('app_contact')}}">Nous Contacter</a></li>
             </ul>
           </li>
           <li><a href="{{path('app_prestationsconsulaires')}}">Services consulaires</a></li>
           <li><a href="{{path('app_annuaireconsulaire')}}">Annuaires consulaires</a></li>
-          <li><a href="/">Etudiants</a></li>
-          <li><a href="/">Liens utiles</a></li>
+          <li><a href="{{path('app_etudiants')}}">Etudiants</a></li>
           <li><a href="{{path('app_contact')}}">Contact</a></li>
           <li>
             <form role="search" method="get" class="search-form" action="/">
@@ -157,7 +156,7 @@
       </div>
       <div class="col py-md-2" style="background-color:#E2E2E2">
         <div style="text-align:center;" class="consul"><br>
-          <a href="index.php/le-president.html" class="portrait"> <strong>Monsieur le Consul Général - Abdourahmane Koita</strong></a>
+          <a href="{{path('app_leconsulgeneral')}}" class="portrait"> <strong>Monsieur le Consul Général - Abdourahmane Koita</strong></a>
           <div class="image_container" ><img width="200" height="250" class="mx-5" src="{{asset('assets/img/consul.jpg')}}" width="200" height="290" alt="PhotoPR" />
           </div>        
       </div>

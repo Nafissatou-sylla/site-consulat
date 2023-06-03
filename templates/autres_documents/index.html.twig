@@ -5,13 +5,40 @@
 
 {%block body%}
     <div class="container" id="page">
+       
+       <div class="special-container m-1">
+         <div class="container-fluid small guide-consulaire "><br><br>
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="/">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                               Autres services
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container-inner">
             <div class="main">
                 <div class="main-inner group">
                     <main class="content" id="content">
-                        <div class="page-title hu-pad group">
-                            <br><br><h1>Autres Documents</h1>
-                        </div>
+                       <div class="section-header">
+                         <br><h2>Autres documents</h2>
+                       </div>
                         <div class="hu-pad group">     
                         <article class="group post-35 page type-page status-publish hentry">    
                             <div class="entry themeform">                           
