@@ -20,7 +20,9 @@ class UserType extends AbstractType
             ->add('nom', TextType::class)
             ->add('prenom', TextType::class)
             ->add('telephone')
-            ->add('dateDeNaissance', DateType::class,)
+            ->add('dateDeNaissance', DateType::class, [
+                'years' => range(1900, date('Y')),
+            ])
             ->add('lieuDeNaissance')
             ->add('paysDeNaissance')
             ->add('email', EmailType::class)
