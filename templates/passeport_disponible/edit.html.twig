@@ -1,0 +1,15 @@
+{% extends './home/base.html.twig' %}
+
+<!DOCTYPE html>
+
+<title>Edit PasseportDisponible</title>
+
+{% block body %}
+    <h1>Edit PasseportDisponible</h1>
+
+    {{ include('passeport_disponible/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_passeport_disponible_index') }}">back to list</a>
+
+    {{ include('passeport_disponible/_delete_form.html.twig') }}
+{% endblock %}
