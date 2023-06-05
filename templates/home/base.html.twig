@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>
+  {%block title%}Consulat Génégal du Sénégal à Marseille{%endblock%}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/aos/aos.css" rel="stylesheet')}}">
+  <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{asset('assets/css/main.css')}}" rel="stylesheet">
+{%block css%}{%endblock%}
+</head>
+
+<body>
+   <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col">
+            <a class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="{{asset('assets/img/consulat.jpg')}}" alt="logo" width="500px" height="80px">
+          </a>
+          </div>
+          <div class="col">
+             <p style="text-align:center; color:#FFFFFF; font-size:25px; font-weight:bold">République du Sénégal<br> Un peuple - un But - Une Foi</p>
+          </div>
+          <div class="col"> 
+            <img src="{{asset('assets/img/dr.png')}}" style="float:right" alt="drapeau" width="300px" height="80px">
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+       <nav id="navbar" class="navbar">
+        <ul style="backgroundcolor:#000000">
+          <li><a href="/">Accueil</a></li>
+          <li class="dropdown"><a href="#"><span>Le Consulat</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="{{path('app_leconsulgeneral')}}">Le consul Général</a></li>
+              <li><a href="{{path('app_missions')}}">Missions</a></li>
+              <li><a href="{{path('app_contact')}}">Nous Contacter</a></li>
+            </ul>
+          </li>
+          <li><a href="{{path('app_prestationsconsulaires')}}">Services consulaires</a></li>
+          <li><a href="{{path('app_annuaireconsulaire')}}">Annuaires consulaires</a></li>
+          <li><a href="{{path('app_etudiants')}}">Etudiants</a></li>
+          <li><a href="{{path('app_contact')}}">Contact</a></li>
+          <li>
+            <form role="search" method="get" class="search-form" action="/">
+            <label>
+            <input type="search" class="search-field" placeholder="Rechercher…" value="" name="s" style="width:120px"/>
+            </label>
+            <button type="button" class="search-submit" style="background-color:white">
+            <i class="bi bi-search"></i>
+            </button>
+            </form> 
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <div class="container text-center">
+		<br>{%block body%}{%endblock%}
+	</div>
+
+  <main id="main">
+    <div class="container">
+        <div class="row">
+          <div class="col py-md-3" style="background-color:#E2E2E2">
+            <img class="mx-5" src="{{asset('assets/img/adresseconsulat.jpg')}}"  alt="consulat général du senegal à Marseille, france"><br><br>
+            <p style="text-align:center;"><strong>446 AVENUE DU PRADO, 13008 MARSEILLE</strong></p>
+            <p style="text-align:center;"><strong>TEL : +33 491 98 44 83</strong></p>
+            <p style="text-align:center;"><strong>EMAIL : contact@consulsen-marseille.org </strong></p>
+            <div style="text-align:center;" class="president">
+              <a href="index.php/le-president.html" class="portrait">Son Excellence  Monsieur Macky  SALL<span></span></a>
+            <div class="image_container" ><img class="mx-5" src="{{asset('assets/img/mck.jpg')}}" width="200" height="290" alt="PhotoPR" />
+            </div>
+            </div>
+            <p style="text-align:center;"><span style="color: #0000ff;"><strong><a href="https://fr.calameo.com/read/006249863536afbe845d5">Tam-tam de l' Emergene n°10</a></strong></span></p>
+            <p style="text-align:center;"><a href="https://fr.calameo.com/read/006249863237bda52ab24">Tam-tam de l'Emergence</a></p>
+            <p style="text-align:center;"><a href="tl_files/ambseye/p1TamtamEmergence.pdf">1ere&nbsp; partie&nbsp; </a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="tl_files/ambseye/p2TamtamEmergence2.pdf">2eme&nbsp; partie</a>&nbsp;</p>
+            <p style="text-align:center;"><a href="https://fr.calameo.com/read/00179625049debb4097ba"><strong>Plan&nbsp; Senegal&nbsp;&nbsp;</strong><strong>Emergent&nbsp; (PSE)</strong></a></p>
+            <p style="text-align:center;"><strong><a href="https://fr.calameo.com/read/00179625049debb4097ba"><img class="mx-5" title="tl_files/ambseye/PSE_1.png" src="{{asset('assets/img/pse.png')}}" alt="tl_files/ambseye/PSE_1.png" width="151" height="85" /></a></strong></p>
+            <p style="text-align:center;"><strong><a href="tl_files/ambseye/Resume Plan Senegal Emergent.pdf">PSE&nbsp; RESUME</a></strong></p>
+            <p style="text-align:center;"><strong><a href="tl_files/ambseye/PSEPAP2014-2018.pdf">PSE&nbsp; PAP 2014-2018</a></strong></p>
+            <p style="text-align:center;"><strong><span style="color: #003366;"><a href="tl_files/ambseye/Plan Senegal Emergent_0r.pdf">PSE</a></span></strong></p>
+            <div class="container" style="margin-top:25px; text-align:center">
+              <p><span style="text-decoration: underline;"><span style="font-size: 12px;"><strong><span style="color: #800080;"><span style="font-size: 25px; margin-left:45px">Vos Démarches</span></span></strong></span></span></p>
+              <div style="margin-top:25px;" id="block-37" class="widget widget_block">
+              <div class="mx-5"><a href="{{path('app_carteconsulaire')}}"><img src="{{asset('assets/img/carteconsulaire.jpg')}}" alt="" width="150px" height="150px"/></a>
+              <p>Carte consulaire</p>
+              </div>
+              </div><div id="block-38" class="widget widget_block">
+              <div class="mx-5"><a href="{{path('app_cni')}}"><img src="{{asset('assets/img/cni1.png')}}" alt="" width="150px" height="150px""/></a>
+              <p>Carte d'identité</p>
+              </div>
+              </div><div id="block-39" class="widget widget_block">
+              <div class="mx-5"><a href="{{path('app_documentsdevoyage')}}"><img src="{{asset('assets/img/docvoyages.png')}}" alt="" width="150px" height="150px"/></a>
+              <p>Passeport</p>
+              </div>
+              </div><div id="block-40" class="widget widget_block">
+              <div class="mx-5"><a href="{{path('app_demandedevisa')}}"><img src="{{asset('assets/img/visasn.jpg')}}" alt="" width="150px" height="150px"/></a>
+              <p>Visa</p>
+              </div>
+            </div>
+            </div></div>
+      <div class="col">
+        <div class="section-header">
+          <h2>Communiqué</h2>
+          <img title="DRAPEAU_senegal.gif" src="{{asset('assets/img/drsn.gif')}}" alt="tl_files/Discours/DRAPEAU_senegal.gif" width="68" height="50" />
+          <p>Aperiam dolorum et et wuia molesti incidunt dolores placeat delop</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h3>Voluptatem dignissimos provident quasi corporis</h3>
+            <p>Ut fugiat ut sunat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-md-2" style="background-color:#E2E2E2">
+        <div style="text-align:center;" class="consul"><br>
+          <a href="{{path('app_leconsulgeneral')}}" class="portrait"> <strong>Monsieur le Consul Général - Abdourahmane Koita</strong></a>
+          <div class="image_container" ><img width="200" height="250" class="mx-5" src="{{asset('assets/img/consul.jpg')}}" width="200" height="290" alt="PhotoPR" />
+          </div>        
+      </div>
+         <div style="text-align:center;" class="ministere"><br>
+          <a href="index.php/le-president.html" class="portrait"> <strong>Minitère des affaires étrangères et des Sénégalais de l'extérieur</strong></a>
+          <div class="image_container" ><img width="200" height="250" class="mx-5" src="{{asset('assets/img/aissata.jpg')}}" width="200" height="290" alt="PhotoPR" />
+          </div>   
+          <strong>M. Aissata Tall Sall</strong>     
+      </div>
+      <div class="section-header mt-5">
+          <h2>Actualités</h2>
+          <a href="https://www.facebook.com/consulsenmarseille/"><p style="font-weight:bold; font-size:15px"> Suivez toute l'actualité sur notre page facebook <i class="bi bi-box-arrow-up-right"></i></p></a>
+        </div>
+      </div>
+  </main>
+
+ 
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
+
+
+  <script src="{{asset('assets/js/main.js')}}"></script>
+{%block scripts%}{%endblock%}
+
+</body><br>
+  {% include './footer.html.twig' %}
+
+</html>
