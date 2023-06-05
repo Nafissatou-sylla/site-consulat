@@ -79,11 +79,8 @@
     </div>
   </header><!-- End Header -->
   <!-- End Header -->
-
-  <div class="container text-center">
-		<br>{%block body%}{%endblock%}
-	</div>
-
+ <div class="container text-center">
+		<br>{%block body%}
   <main id="main">
     <div class="container">
         <div class="row">
@@ -192,6 +189,8 @@
 {%block scripts%}{%endblock%}
 
 </body><br>
+{%endblock%}
+	</div>
   {% include './footer.html.twig' %}
 
 </html>
