@@ -1,0 +1,17 @@
+{% extends './home/base.html.twig' %}
+
+{% block body %}
+
+{% for message in app.flashes('erreur') %}
+ <div class="alert alert-success text-center mb-0">
+  {{ message }}
+ </div>
+ {% endfor %}
+
+
+<div>
+  <br> 
+    <strong>Désolé, votre Passeport n'est pas encore disponible au Consulat Générale du Sénégal de Marseille, 
+    Veuillez patientez un moment </strong> <br><br><br>
+</div>
+{% endblock %}
