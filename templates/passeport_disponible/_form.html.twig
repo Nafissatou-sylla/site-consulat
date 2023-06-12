@@ -1,0 +1,22 @@
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }} 
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                {{form_row(form.prenom)}}
+            </div>
+            <div class="col-4">
+                {{form_row(form.nom)}}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                {{form_row(form.dateDeNaissance)}}
+            </div>
+            <div class="col-4">
+                {{form_row(form.lieuDeNaissance)}}
+            </div>
+        </div>
+    </div>
+    <button class="btn">{{ button_label|default('Rechercher') }}</button> <br><br>
+{{ form_end(form) }}
