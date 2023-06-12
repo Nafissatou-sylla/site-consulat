@@ -61,6 +61,7 @@
             </ul>
           </li>
           <li><a href="{{path('app_prestationsconsulaires')}}">Services consulaires</a></li>
+          <li><a href="{{path('app_passeport_disponible_new')}}">Passeport Disponible</a></li>
           <li><a href="{{path('app_annuaireconsulaire')}}">Annuaires consulaires</a></li>
           <li><a href="{{path('app_user_new')}}">Etudiants</a></li>
           <li><a href="{{path('app_contact')}}">Contact</a></li>
@@ -82,18 +83,17 @@
  <div class="container text-center">
 		<br>{%block body%}
 
-
   <main id="main">
     <div class="container">
         <div class="row">
           <div class="col-3 py-md-3" style="background-color:#E2E2E2">
             <img class="mx-3" src="{{asset('assets/img/adresseconsulat.jpg')}}"  alt="consulat général du senegal à Marseille, france"><br><br>
             <p style="text-align:center;"><strong>446 AVENUE DU PRADO, 13008 MARSEILLE</strong></p>
-            <p style="text-align:center;"><strong>TEL : +33 491 98 44 83</strong></p>
+            <p style="text-align:center;"><strong>TEL : +334 91 47 35 49</strong></p>
             <p style="text-align:center;"><strong>EMAIL : contact@consulsen-marseille.org </strong></p>
             <div style="text-align:center;" class="president">
-              <a href="index.php/le-president.html" class="portrait">Son Excellence  Monsieur Macky  SALL<span></span></a>
-            <div class="image_container"><img class="mx-3" src="{{asset('assets/img/mck.jpg')}}" width="200" height="290" alt="PhotoPR" />
+              <a href="index.php/le-president.html" class="portrait">Son Excellence  Monsieur Macky  Sall<span></span></a>
+            <div class="image_container"><img class="mx-3" src="{{asset('assets/img/mck.jpg')}}" width="180" height="290" alt="PhotoPR" />
             </div>
             </div>
             <p style="text-align:center;"><span style="color: #0000ff;"><strong><a href="https://fr.calameo.com/read/006249863536afbe845d5">Tam-tam de l' Emergene n°10</a></strong></span></p>
@@ -126,10 +126,10 @@
             </div></div>
       <div class="col-6">
         <div class="section-header">
-          <h2>Communiqué</h2>
-          <img title="DRAPEAU_senegal.gif" src="{{asset('assets/img/drsn.gif')}}" alt="tl_files/Discours/DRAPEAU_senegal.gif" width="68" height="50" />
+          <h2>Communiqué</h2> <br><br>
+          <img title="DRAPEAU_senegal.gif" src="{{asset('assets/img/drsn.gif')}}" alt="tl_files/Discours/DRAPEAU_senegal.gif" width="80" height="150" />
         </div>
-        <div class="row gy-4">
+        <div class="row gy-100">
           <div >
              <strong> Pour des raisons de sécurité, le Consulat Général du Sénégal à Marseille est fermé 
               du Mardi 06/Juin/2023 au Vendredi 09/Juin/2023. <br>
@@ -141,17 +141,19 @@
       </div>
       <div class="col-3 py-md-2" style="background-color:#E2E2E2">
         <div style="text-align:center;" class="consul"><br>
-          <a href="{{path('app_leconsulgeneral')}}" class="portrait"> <strong>Monsieur le Consul Général - Abdourahmane Koita</strong></a>
-          <div class="image_container" ><img width="200" height="250" class="mx-5" src="{{asset('assets/img/consul.jpg')}}" width="200" height="290" alt="PhotoPR" />
+          <a href="{{path('app_leconsulgeneral')}}" class="portrait"> <strong>Monsieur le Consul Général </strong></a>
+          <br><br><div class="image_container" ><img width="190" height="150" class="mx-5" src="{{asset('assets/img/consul.jpg')}}" width="200" height="290" alt="PhotoPR" />
+          <br><strong>Mr Abdourahmane Koïta </strong>
           </div>        
       </div>
+        <br><br>
          <div style="text-align:center;" class="ministere"><br>
           <a href="index.php/le-president.html" class="portrait"> <strong>Minitère des affaires étrangères et des Sénégalais de l'extérieur</strong></a>
-          <div class="image_container" ><img width="200" height="250" class="mx-5" src="{{asset('assets/img/aissata.jpg')}}" width="200" height="290" alt="PhotoPR" />
+         <br><br> <div class="image_container" ><img width="190" height="150" class="mx-5" src="{{asset('assets/img/aissata.jpg')}}" width="200" height="290" alt="PhotoPR" />
           </div>   
-          <strong>M. Aissata Tall Sall</strong>     
+          <strong>Mme Aissata Tall Sall</strong>     
       </div>
-      <div class="section-header mt-5">
+     <br><br> <div class="section-header mt-5">
           <h2>Actualités</h2>
           <a href="https://www.facebook.com/consulsenmarseille/"><p style="font-weight:bold; font-size:15px"> Suivez toute l'actualité sur notre page facebook <i class="bi bi-box-arrow-up-right"></i></p></a>
         </div>
