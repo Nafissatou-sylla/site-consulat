@@ -2,8 +2,86 @@
 
 
 {% block body %}
-    <br><br><h4>Remplissez le formulaire</h4>
-
+<div class="row">
+<div class="col">
+<br>
+          <h2 style="text-align:left">Remplissez le formulaire</h2><br>
+        <div class="container" style="text-align:center">
     {{ include('passeport_disponible/_form.html.twig') }}
+    </div>
+    </div>
+     <div class="col-3 py-md-2" style="background-color:#E2E2E2">
+        <div style="text-align:center;" class="consul"><br>
+          <strong style="color:#008374;"> Monsieur le Consul Général </strong>
+          <br><br><div class="image_container" ><img width="190" height="150" class="mx-5" src="{{asset('assets/img/consul.jpg')}}" width="200" height="290" alt="PhotoPR" />
+          <br><strong>Mr Abdourahmane Koïta </strong>
+          </div>        
+      </div>
+        <br><br>
+         <div style="text-align:center;" class="ministere"><br>
+          <a href="index.php/le-president.html" class="portrait"> <strong>Minitère des affaires étrangères et des Sénégalais de l'extérieur</strong></a>
+          <div class="image_container" ><img width="200" height="250" class="mx-5" src="{{asset('assets/img/aissata.jpg')}}" width="200" height="290" alt="PhotoPR" />
+          </div>   
+          <strong>Mme Aissata Tall Sall</strong>   
+          
+          <br><br>
+          <div style="text-align:center;" class="ministere"><br>
+            <a href="https://diplomatie.gouv.sn/">
+              <strong style="color:#008374;"> Ministère des Affaires Etrangères</strong><br><br>
+              <div class="image_container" >
+                <img width="190" height="150" class="mx-5" src="{{asset('assets/img/ministère.png')}}" width="200" height="290" alt="PhotoPR" />
+              </div>  
+              <br><strong style="color:#008374;"> et des Sénégalais de l'extérieur </strong>
+            </a>
+          </div>
+         <br><br> <div class="section-header mt-5">
+          <h2>Actualités</h2>
+          <a href="https://www.facebook.com/consulsenmarseille/"><p style="font-weight:bold; font-size:15px"> Suivez toute l'actualité sur notre page facebook <i class="bi bi-box-arrow-up-right"></i></p></a>
+        </div>
+      </div>
+          <div class="container" style="margin-top:25px; text-align:center">
+              <p>
+                <span style="text-decoration: underline;">
+                  <span style="font-size: 12px;">
+                    <strong>
+                      <span style="color: #800080;">
+                        <span style="font-size: 25px; text-align:center">Vos Démarches</span>
+                      </span>
+                    </strong>
+                  </span>
+                </span>
+              </p>
 
+              <div  id="block-39" class="widget widget_block">
+                <div class="mx-5">
+                  <a href="{{path('app_passeport_disponible_new')}}">
+                    <img src="{{asset('assets/img/docvoyages.png')}}" alt="" width="150px" height="150px"/>
+                  </a>
+                  <a href="{{path('app_passeport_disponible_new')}}"> <h5> Vérifier si votre passeport est disponible </h5> </a>
+      
+                </div>
+              </div>
+
+              <div style="margin-top:25px;" id="block-37" class="widget widget_block">
+                <div class="mx-5">
+                  <a href="{{path('app_objetdurdv') }}">
+                    <img src="{{asset('assets/img/rdv.jpg')}}" width="150px" height="150px"/>
+                  </a>
+                  <a href="{{path('app_objetdurdv') }}"> <h5> Prendre Rendez-vous</h5> </a>
+              
+                </div>
+              </div>
+
+              <div style="margin-top:25px;" id="block-37" class="widget widget_block">
+                <div class="mx-5">
+                  <a href="{{path('app_autres_documents')}}">
+                    <img src="{{asset('assets/img/autreservice.png')}}" width="150px" height="150px"/>
+                  </a>
+                  <p>Autres Services</p>
+                </div>
+              </div>
+          
+          </div>
+</div>
 {% endblock %}
+
