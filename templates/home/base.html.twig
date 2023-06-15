@@ -34,15 +34,14 @@
       <div class="row">
           <div class="col">
             <a class="logo d-flex align-items-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="{{asset('assets/img/consulat.jpg')}}" alt="logo" width="500px" height="80px">
+            <img src="{{asset('assets/img/consulat.jpg')}}" alt="logo" width="290px" height="100px">
           </a>
           </div>
           <div class="col">
              <p style="text-align:center; color:#FFFFFF; font-size:25px; font-weight:bold">République du Sénégal<br> Un peuple - un But - Une Foi</p>
           </div>
           <div class="col"> 
-            <img src="{{asset('assets/img/dr.png')}}" style="float:right" alt="drapeau" width="300px" height="80px">
+            <img src="{{asset('assets/img/dr.png')}}" style="float:right" alt="drapeau" width="290px" height="100px">
           </div>
       </div>
     </div>
@@ -53,13 +52,7 @@
        <nav id="navbar" class="navbar">
         <ul style="backgroundcolor:#000000">
           <li><a href="/">Accueil</a></li>
-          <li class="dropdown"><a href="#"><span>Le Consulat</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="{{path('app_leconsulgeneral')}}">Le consul Général</a></li>
-              <li><a href="{{path('app_missions')}}">Missions</a></li>
-              <li><a href="{{path('app_contact')}}">Nous Contacter</a></li>
-            </ul>
-          </li>
+            <li><a href="{{path('app_missions')}}">Les Missions</a></li>
           <li><a href="{{path('app_prestationsconsulaires')}}">Services consulaires</a></li>
           <li><a href="{{path('app_annuaireconsulaire')}}">Annuaires consulaires</a></li>
           <li><a href="{{path('app_user_new')}}">Etudiants</a></li>
@@ -82,17 +75,16 @@
  <div class="container text-center">
 		<br>{%block body%}
 
-
   <main id="main">
     <div class="container">
         <div class="row">
           <div class="col-3 py-md-3" style="background-color:#E2E2E2">
             <img class="mx-3" src="{{asset('assets/img/adresseconsulat.jpg')}}"  alt="consulat général du senegal à Marseille, france"><br><br>
             <p style="text-align:center;"><strong>446 AVENUE DU PRADO, 13008 MARSEILLE</strong></p>
-            <p style="text-align:center;"><strong>TEL : +33 491 98 44 83</strong></p>
+            <p style="text-align:center;"><strong>TEL : +334 91 47 35 49</strong></p>
             <p style="text-align:center;"><strong>EMAIL : contact@consulsen-marseille.org </strong></p>
             <div style="text-align:center;" class="president">
-              <a href="{{path('app_lepresident')}}" class="portrait">Son Excellence  Monsieur Macky  SALL<span></span></a>
+              <a href="index.php/le-president.html" class="portrait">Son Excellence  Monsieur Macky  SALL<span></span></a>
             <div class="image_container"><img class="mx-3" src="{{asset('assets/img/mck.jpg')}}" width="200" height="290" alt="PhotoPR" />
             </div>
             </div>
@@ -128,33 +120,101 @@
         <div class="section-header">
           <h2>Communiqué</h2>
           <img title="DRAPEAU_senegal.gif" src="{{asset('assets/img/drsn.gif')}}" alt="tl_files/Discours/DRAPEAU_senegal.gif" width="68" height="50" />
+<<<<<<<<< Temporary merge branch 1
         </div>
-        <div class="row gy-4">
+        <div class="row gy-100">
           <div >
              <strong> Pour des raisons de sécurité, le Consulat Général du Sénégal à Marseille est fermé 
               du Mardi 06/Juin/2023 au Vendredi 09/Juin/2023. <br>
               Merci pour votre compréhension
             </strong> 
           </div>
-                </div>
+        
+=========
+          <p>Pas de communiqués à ce jour</p>
+>>>>>>>>> Temporary merge branch 2
+        </div>
       </div>
       <div class="col-3 py-md-2" style="background-color:#E2E2E2">
         <div style="text-align:center;" class="consul"><br>
-          <a href="{{path('app_leconsulgeneral')}}" class="portrait"> <strong>Monsieur le Consul Général - Abdourahmane Koita</strong></a>
-          <div class="image_container" ><img width="200" height="250" class="mx-5" src="{{asset('assets/img/consul.jpg')}}" width="200" height="290" alt="PhotoPR" />
+          <strong style="color:#008374;"> Monsieur le Consul Général </strong>
+          <br><br><div class="image_container" ><img width="190" height="150" class="mx-5" src="{{asset('assets/img/consul.jpg')}}" width="200" height="290" alt="PhotoPR" />
+          <br><strong>Mr Abdourahmane Koïta </strong>
           </div>        
       </div>
+        <br><br>
          <div style="text-align:center;" class="ministere"><br>
-          <a href="https://diplomatie.gouv.sn/" class="portrait"> <strong>Minitère des affaires étrangères et des Sénégalais de l'extérieur</strong></a>
+          <a href="index.php/le-president.html" class="portrait"> <strong>Minitère des affaires étrangères et des Sénégalais de l'extérieur</strong></a>
           <div class="image_container" ><img width="200" height="250" class="mx-5" src="{{asset('assets/img/aissata.jpg')}}" width="200" height="290" alt="PhotoPR" />
           </div>   
-          <strong>M. Aissata Tall Sall</strong>     
-      </div>
-      <div class="section-header mt-5">
+          <strong>Mme Aissata Tall Sall</strong>   
+          
+          <br><br>
+          <div style="text-align:center;" class="ministere"><br>
+            <a href="https://diplomatie.gouv.sn/">
+              <strong style="color:#008374;"> Ministère des Affaires Etrangères</strong><br><br>
+              <div class="image_container" >
+                <img width="190" height="150" class="mx-5" src="{{asset('assets/img/ministère.png')}}" width="200" height="290" alt="PhotoPR" />
+              </div>  
+              <br><strong style="color:#008374;"> et des Sénégalais de l'extérieur </strong>
+            </a>
+          </div>
+      
+
+         <br><br> <div class="section-header mt-5">
           <h2>Actualités</h2>
           <a href="https://www.facebook.com/consulsenmarseille/"><p style="font-weight:bold; font-size:15px"> Suivez toute l'actualité sur notre page facebook <i class="bi bi-box-arrow-up-right"></i></p></a>
         </div>
       </div>
+
+
+          
+          <div class="container" style="margin-top:25px; text-align:center">
+              <p>
+                <span style="text-decoration: underline;">
+                  <span style="font-size: 12px;">
+                    <strong>
+                      <span style="color: #800080;">
+                        <span style="font-size: 25px; text-align:center">Vos Démarches</span>
+                      </span>
+                    </strong>
+                  </span>
+                </span>
+              </p>
+
+              <div  id="block-39" class="widget widget_block">
+                <div class="mx-5">
+                  <a href="{{path('app_passeport_disponible_new')}}">
+                    <img src="{{asset('assets/img/docvoyages.png')}}" alt="" width="150px" height="150px"/>
+                  </a>
+                  <a href="{{path('app_passeport_disponible_new')}}"> <h5> Vérifier si votre passeport est disponible </h5> </a>
+      
+                </div>
+              </div>
+
+              <div style="margin-top:25px;" id="block-37" class="widget widget_block">
+                <div class="mx-5">
+                  <a href="{{path('app_objetdurdv') }}">
+                    <img src="{{asset('assets/img/rdv.jpg')}}" width="150px" height="150px"/>
+                  </a>
+                  <a href="{{path('app_objetdurdv') }}"> <h5> Prendre Rendez-vous</h5> </a>
+              
+                </div>
+              </div>
+
+              <div style="margin-top:25px;" id="block-37" class="widget widget_block">
+                <div class="mx-5">
+                  <a href="{{path('app_autres_documents')}}">
+                    <img src="{{asset('assets/img/autreservice.png')}}" width="150px" height="150px"/>
+                  </a>
+                  <p>Autres Services</p>
+                </div>
+              </div>
+          
+          </div>
+
+    
+
   </main>
 
  
@@ -177,8 +237,10 @@
 {%block scripts%}{%endblock%}
 
 </body><br>
-{%endblock%}
-	</div>
-  {% include './footer.html.twig' %}
 
+{%endblock%}
+
+	</div>
+  
+{% include './footer.html.twig' %}
 </html>

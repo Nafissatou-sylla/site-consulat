@@ -14,9 +14,16 @@
           <div class="col-xl-3 col-md-5">
             <a href="{{path('app_servicesauxsenegalais')}}">
               <div class="service-item  position-relative">
-                <img class="card-img-top" src="{{asset('assets/img/passport.png')}}" width="150px" height="200px" alt="Services aux Sénégalais">
+                <img class="card-img-top" src="{{asset('assets/img/passport.png')}}" width="100px" height="150px" alt="Services aux Sénégalais">
                 <h3>Services aux Sénégalais</h3>
-                <p>Documents de voyages, Etat-Civil , CNI, Immatriculation, Légalisation,...</p>
+                <ul>
+                  <li>Documents de voyages </li>
+                  <li>Etat-Civil </li> 
+                  <li>CNI </li>
+                  <li>Immatriculation </li> 
+                  <li>Légalisation </li> 
+                  <li>etc... </li>   
+                </ul>
             </a>
           </div>
           </div><!-- End Service Item -->
@@ -24,9 +31,11 @@
           <div class="col-xl-3 col-md-5">
             <a href="{{path('app_demandedevisa')}}">
             <div class="service-item position-relative">
-             <img class="card-img-top" src="{{asset('assets/img/visasn.jpg')}}" width="150px" height="200px" alt="Services aux Etrangers">
+             <img class="card-img-top" src="{{asset('assets/img/visasn.jpg')}}" width="100px" height="150px" alt="Services aux Etrangers">
               <h3>Services aux Etrangers</h3>
-              <p>Demande de visa</p><br><br><br>
+              <ul>
+                <li>Demande de visa</li>
+              </ul><br><br><br>
             </a>
             </div>
           </div><!-- End Service Item -->
@@ -34,9 +43,11 @@
           <div class="col-xl-3 col-md-5">
             <a href="{{path('app_objetdurdv') }}">
             <div class="service-item position-relative">
-              <img class="card-img-top" src="{{asset('assets/img/rdv.jpg')}}" width="150px" height="200px" alt="Prendre RDV">
+              <img class="card-img-top" src="{{asset('assets/img/rdv.jpg')}}" width="100px" height="150px" alt="Prendre RDV">
               <br><br><h3>Prendre RDV</h3>
-              <p>Système de demande de Rendez-vous consulaire en ligne</p><br>
+              <ul>
+                <li>Système de demande de Rendez-vous consulaire en ligne</li>
+              </ul><br>
               </a>
             </div>
           </div><!-- End Service Item -->
@@ -44,9 +55,27 @@
           <div class="col-xl-3 col-md-5">
             <a href="https://www.visitezlesenegal.com/">
             <div class="service-item position-relative">
-              <img class="card-img-top" src="{{asset('assets/img/visitezsn.jpg')}}" width="150px" height="200px" alt="Visitez le Sénégal">
+              <img class="card-img-top" src="{{asset('assets/img/visitezsn.jpg')}}" width="100px" height="150px" alt="Visitez le Sénégal">
               <h3>Visitez le Sénégal</h3>
-              <p>Dakar, Lac Rose, Saly Portudal, Gorée, Ngor, Iles du Saloum, ...</p>
+              <ul>
+                <li>Dakar </li>
+                <li>Lac Rose </li>
+                <li>Saly Portudal </li>
+                <li>Goré </li>
+                <li>Ngor </li>
+                <li>Iles du Saloum </li>
+              </ul>
+            
+            </a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_passeport_disponible_new')}}">
+            <div class="service-item position-relative"> 
+             <img class="card-img-top" src="{{asset('assets/img/documentsdevoyage.jpg')}}" width="100px" height="150px" alt="Services aux Etrangers">
+              <h3>Passeport disponible</h3>
+              <strong> Vérifiez si votre passeport est disponible </strong> <br><br><br>
             </a>
             </div>
           </div><!-- End Service Item -->
@@ -54,10 +83,7 @@
       </div>
     </section><!-- End Our Services Section -->
 
-    <section id="services" class="services sections-bg">
-       <h3>Vérifier si votre passeport ou CNI est disponible --->  
-       <a href="{{path('app_passeport_disponible_new')}}"> Consulter</h3>
-    </section>
+ 
     <!-- End Our Services Section -->
 </div>
 {% endblock %}
