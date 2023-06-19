@@ -1,7 +1,7 @@
 {% extends './home/base.html.twig' %}
  {% block titre %}Carte Consulaire {% endblock %}
   {% block css %}{% endblock %}
-      {% block body %}
+{% block body %}
 
 <body class="path-frontpage page-node-type-homepage">
     <div class="special-container m-5">
@@ -62,9 +62,8 @@
                       </div>
                     </div>
                     <div class="col-lg-9 block-article__text">
-                        <p>Le dépôt et le retait se font sur place</p>
-                        Télécharger le formulaire <a href="https://consulsen-paris.gouv.sn/wp-content/uploads/2022/11/Form.-Carte-Consulaire.pdf"> Ici</a><br>
-                        <p>Le titulaire de la carte consulaire doit en cas de retour définitif au sénégal retourner cette carte
+                        <p>Le dépôt et le retait se font sur place.<br>
+                        Le titulaire de la carte consulaire doit en cas de retour définitif au sénégal retourner cette carte
                                     au Consulat. Il peut bénéficier, s'il le désire d'un certificat de déménagement qui lui permettra de rapatrier
                                     tous ses effets personnels afin de bénéficier de franchises douanières.</p>
                     </div>
@@ -87,23 +86,21 @@
                               </div>
                       </div>
                     </div>
-                    <div class="col-lg-9 block-article__text">
+                    <div class="col-lg-6 block-article__text">
                     <div class="section-header">
-                     <h2>Pour le majeur</h2>
-                    
-                            <p>Carte d'Identité Sénégalaise (Copie Recto Verso) OU<br>
-                            Passeport Sénégalais (Copie des deux premières pages)&nbsp;<strong>en cours de validité + Extrait de naissance</strong><br>
-                            4 Photos d'Identité&nbsp;<strong>Récentes</strong>,&nbsp;<strong>Identiques&nbsp;</strong>&nbsp;.<br>
-                            Justificatif de domicile.</div>
-                       <div class="section-header">
-          <h2>Pour le mineur</h2>                  
-        Extrait de naissance ou CNI<br>
-        Pièce d'Identité nationale en cours de validité de l'un des parents <br>
-        4 Photos d'Identité&nbsp.<br>
-        Justificatif de domicile.<br>                               
-        </div>                        
+                     <h2>Pour le majeur</h2> 
+                       <strong>1: </strong> Une pièce d'Identité nationale sénégalaise : <br>
+                         CNI ou Passeport <strong> + </strong> Extrait de naissance ; <br>
+                       <strong>2: </strong> Justificatif de domicile ; <br>
+                        <strong>3: </strong>4 Photos d'Identité ;<br>
+                    <div class="section-header">
+          <h2>Pour le mineur</h2>
+            <strong>1: </strong> Extrait de naissance ou CNI ;<br>
+             <strong>2: </strong> Pièce d'Identité nationale en cours de validité de l'un des parents ;<br>
+             <strong>3: </strong> 4 Photos d'Identité ;<br>
+             <strong>4: </strong> Justificatif de domicile ;<br>
 
-
+</div>
                     </div>
 
                 </div>
@@ -117,7 +114,5 @@
     <hr width="40%" style="display:block;border-bottom:2px solid grey !important;
 border-top:none !important">
 
-    <footer id="footer"> </footer><!--/#footer-->
-
 {%block scripts%}{%endblock%}
-{%endblock%}
+{% endblock %}
