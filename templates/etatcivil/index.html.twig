@@ -40,6 +40,25 @@
           <h2>Etat Civil</h2>
         </div>
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_transcription_de_naissance')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/trnais.png')}}" alt="Transcription de naissance">
+                <h3>Transcription de naissance</h3>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_fiche_individuelle_detat_civil')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="{}" alt="Fiche Individuelle D'Etat Civil">
+                <h3>Fiche Individuelle D'Etat Civil</h3>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
           <div class="col-xl-3 col-md-5">
             <a href="{{path('app_carteconsulaire')}}">
               <div class="service-item  position-relative">
@@ -59,18 +78,28 @@
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-5">
-            <a href="{{path('app_transcription_de_naissance')}}">
+            <a href="{{path('app_certificat_de_demenagement')}}">
               <div class="service-item position-relative">
-                <img class="card-img-top" src="{{asset('assets/img/trnais.png')}}" alt="Transcription de naissance">
-                <h3>Transcription de naissance</h3>
+              <img class="card-img-top" src="{{asset('assets/img/')}}" alt="Certificat de déménagement">
+                <h3>Certificat de déménagement</h3>
               </div>
             </a>
           </div><!-- End Service Item -->
+
           <div class="col-xl-3 col-md-5">
             <a href="{{path('app_laissezpassermortuaire')}}">
               <div class="service-item position-relative">
                 <img class="card-img-top" src="{{asset('assets/img/laiss.jpg')}}" height="120px"  alt="Laissez-passer mortuaire">
                 <h3>Laissez-passer mortuaire</h3>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_deces')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="{{asset('')}}" height="120px"  alt="Transcription de décès">
+                <h3>Transcription de décès</h3>
               </div>
             </a>
           </div><!-- End Service Item -->
