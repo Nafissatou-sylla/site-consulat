@@ -32,7 +32,6 @@
         </div>
 <br><br>
 
-
           <!-- ======= Our Services Section ======= -->
     <section id="services" class="services sections-bg">
       <div class="container" data-aos="fade-up">
@@ -49,11 +48,20 @@
               </div>
             </a>
           </div><!-- End Service Item -->
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_immatriculation')}}">
+              <div class="service-item  position-relative"><br>
+                <img class="card-img-top" src="{{asset('assets/img/immatriculation.png')}}" style="float:center; width:110px; height:120px" alt="immatriculation">
+                <br><br><h3 style="text-align:center">Immatriculation</h3>
+                <p>Pour tout enfant ayant moins de 5ans</p>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-5">
             <a href="{{path('app_fiche_individuelle_detat_civil')}}">
-              <div class="service-item position-relative">
-                <img class="card-img-top" src="{}" alt="Fiche Individuelle D'Etat Civil">
+              <div class="service-item ">
+                <img class="card-img-top" src="{{asset('assets/img/fiche.jpg')}}" width="300px" height="120px" alt="Fiche Individuelle D'Etat Civil">
                 <h3>Fiche Individuelle D'Etat Civil</h3>
               </div>
             </a>
