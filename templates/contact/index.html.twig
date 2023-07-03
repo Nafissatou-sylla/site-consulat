@@ -3,11 +3,8 @@
   {% block css %}{% endblock %}
 
 {% block body %}
-
 <body class="path-frontpage page-node-type-homepage">
-
 <div class="container">
-
    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -16,21 +13,13 @@
           <p>Vous avez besoin de contacter les services consulaires ?</p>
         </div>
         <div class="row gx-lg-0 gy-4">
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <div class="info-container d-flex flex-column align-items-center justify-content-center">
               <div class="info-item d-flex">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h4>Adresse:</h4>
-                  <p>446 Avenue du prado</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Email:</h4>
-                  <p>contact@consulsen-marseille.org</p>
+                  <p>446 Avenue du prado, 13008 Marseille</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -46,29 +35,19 @@
                 <i class="bi bi-clock flex-shrink-0"></i>
                 <div>
                   <h4>Horaires d'ouvertures:</h4>
+
                   <p>Du lundi au Vendredi: de 09h à 13h et de 14h à 17h</p>
-                </div>
-              </div><!-- End Info Item -->
-            </div>
-
+              </div>
+            </div><!-- End Info Item -->
           </div>
-
-          <div class="col-lg-8">
-            {{form(formulaire)}}
-          </div><!-- End Contact Form -->
-
+          </div>
+          <div class="col-lg-6">
+            <div class="container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.211692999601!2d5.380843810597485!3d43.26794067714426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c744d638637d%3A0x88af50d243949536!2s446%20Av.%20du%20Prado%2C%2013008%20Marseille!5e0!3m2!1sfr!2sfr!4v1684483768293!5m2!1sfr!2sfr" width="400" height="510" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div><!-- End Col -->
         </div>
-
       </div>
     </section><!-- End Contact Section -->
-<div class="container">
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.211692999601!2d5.380843810597485!3d43.26794067714426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c744d638637d%3A0x88af50d243949536!2s446%20Av.%20du%20Prado%2C%2013008%20Marseille!5e0!3m2!1sfr!2sfr!4v1684483768293!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- </div>  </div>
-
-
-
-                {% block scripts %}      {% endblock %}
-
-     </body>
-   
+    {% block scripts %}      {% endblock %}
+    </body>
 {% endblock %}
