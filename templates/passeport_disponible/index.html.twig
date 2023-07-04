@@ -2,7 +2,7 @@
 
 
 {% block body %}
-    <h1>PasseportDisponible index</h1>
+    <h3>Liste des passeports disponibles</h3><br><br>
 
     <table class="table">
         <thead>
@@ -24,8 +24,8 @@
                 <td>{{ passeport_disponible.dateDeNaissance ? passeport_disponible.dateDeNaissance|date('Y-m-d') : '' }}</td>
                 <td>{{ passeport_disponible.lieuDeNaissance }}</td>
                 <td>
-                    <a href="{{ path('app_passeport_disponible_show', {'id': passeport_disponible.id}) }}">show</a>
-                    <a href="{{ path('app_passeport_disponible_edit', {'id': passeport_disponible.id}) }}">edit</a>
+                    <a href="{{ path('app_passeport_disponible_show', {'id': passeport_disponible.id}) }}">Voir</a><br>
+                    <a href="{{ path('app_passeport_disponible_edit', {'id': passeport_disponible.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}
@@ -36,5 +36,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_passeport_disponible_new') }}">Create new</a>
+    <a href="{{ path('app_passeport_disponible_new') }}">Ajouter un nouveau</a>
 {% endblock %}

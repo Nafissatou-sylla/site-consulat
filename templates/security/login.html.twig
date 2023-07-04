@@ -1,6 +1,6 @@
 {% extends './home/base.html.twig' %}
 
-{% block title %}Log in!{% endblock %}
+{% block title %}Connectez-vous{% endblock %}
 
 {% block body %}
 <form method="post">
@@ -14,10 +14,10 @@
         </div>
     {% endif %}
 <br><br><br>
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <h1 class="h3 mb-3 font-weight-normal">Connexion</h1><br>
     <label for="inputEmail">Email</label>
     <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
-    <label for="inputPassword">Password</label>
+    <br><label for="inputPassword">Mot de pass</label>
     <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
 
     <input type="hidden" name="_csrf_token"
@@ -35,8 +35,9 @@
         </div>
     #}
 
+<br>
     <button class="btn btn-lg btn-primary" type="submit">
-        Sign in
+        Validez
     </button>
 </form>
 {% endblock %}

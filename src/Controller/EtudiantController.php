@@ -10,14 +10,13 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
-use Symfony\Component\Security\Http\Attribute\IsGranted;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 
-#[Route('/user')]
-class UserController extends AbstractController
+#[Route('/etudiant')]
+class EtudiantController extends AbstractController
 {
-    #[Route('/', name: 'app_user_index', methods: ['GET'])]
-    #[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants pour accéder à la liste des users')]
+    #[Route('/', name: 'app_etudiant_index', methods: ['GET'])]
 
     public function index(UserRepository $userRepository): Response
     {
@@ -34,8 +33,6 @@ class UserController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $hashedPassword = $passwordHasher->hashPassword( $user,$user->getPassword());
-            $user->setPassword($hashedPassword);
             $userRepository->save($user, true);
 
             return $this->redirectToRoute('app_user_show', ['id' => $user->getId()],  Response::HTTP_SEE_OTHER);
