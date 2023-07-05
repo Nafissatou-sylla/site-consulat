@@ -21,6 +21,7 @@ class Role
     #[ORM\ManyToMany(targetEntity: User::class, mappedBy: 'refRole')]
     private Collection $users;
 
+
     public function __construct()
     {
         $this->users = new ArrayCollection();
@@ -75,5 +76,7 @@ class Role
     {
         return $this->description;
     }
+
+   
     
 }
