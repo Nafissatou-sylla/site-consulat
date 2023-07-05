@@ -35,7 +35,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 50)]
     private ?string $nom = null;
 
-    #[ORM\ManyToMany(targetEntity: Role::class, inversedBy: 'userss')]
+    #[ORM\ManyToMany(targetEntity: Role::class, inversedBy: 'users')]
     private Collection $refRole;
 
     public function __construct()

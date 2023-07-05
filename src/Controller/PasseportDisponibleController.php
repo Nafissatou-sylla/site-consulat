@@ -64,7 +64,6 @@ class PasseportDisponibleController extends AbstractController
 
 
     #[Route('/new', name: 'app_passeport_disponible_new', methods: ['GET', 'POST'])]
-    #[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants pour ajouter un passeport')]
     public function new(Request $request, PasseportDisponibleRepository $passeportDisponibleRepository): Response
     {
         $passeportDisponible = new PasseportDisponible();
