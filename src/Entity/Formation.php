@@ -15,27 +15,24 @@ class Formation
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 100)]
+    #[ORM\Column(length: 150)]
     private ?string $universite = null;
 
-    #[ORM\Column(length: 100)]
-    private ?string $formation = null;
+    #[ORM\Column(length: 150)]
+    private ?string $formationSuivie = null;
 
-    #[ORM\Column(length: 100)]
-    private ?string $annee = null;
-
-    #[ORM\Column(length: 100)]
+    #[ORM\Column(length: 50)]
     private ?string $niveau = null;
 
-    #[ORM\Column(length: 100)]
-    private ?string $ville = null;
+    #[ORM\Column(length: 150)]
+    private ?string $villeDEtude = null;
 
-    #[ORM\OneToMany(mappedBy: 'formation', targetEntity: User::class)]
-    private Collection $users;
+    #[ORM\OneToMany(mappedBy: 'refFormation', targetEntity: Etudiant::class)]
+    private Collection $etudiants;
 
     public function __construct()
     {
-        $this->users = new ArrayCollection();
+        $this->etudiants = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -48,33 +45,21 @@ class Formation
         return $this->universite;
     }
 
-    public function setUniversite(string $universite): self
+    public function setUniversite(string $universite): static
     {
         $this->universite = $universite;
 
         return $this;
     }
 
-    public function getFormation(): ?string
+    public function getFormationSuivie(): ?string
     {
-        return $this->formation;
+        return $this->formationSuivie;
     }
 
-    public function setFormation(string $formation): self
+    public function setFormationSuivie(string $formationSuivie): static
     {
-        $this->formation = $formation;
-
-        return $this;
-    }
-
-    public function getAnnee(): ?string
-    {
-        return $this->annee;
-    }
-
-    public function setAnnee(string $annee): self
-    {
-        $this->annee = $annee;
+        $this->formationSuivie = $formationSuivie;
 
         return $this;
     }
@@ -84,49 +69,49 @@ class Formation
         return $this->niveau;
     }
 
-    public function setNiveau(string $niveau): self
+    public function setNiveau(string $niveau): static
     {
         $this->niveau = $niveau;
 
         return $this;
     }
 
-    public function getVille(): ?string
+    public function getVilleDEtude(): ?string
     {
-        return $this->ville;
+        return $this->villeDEtude;
     }
 
-    public function setVille(string $ville): self
+    public function setVilleDEtude(string $villeDEtude): static
     {
-        $this->ville = $ville;
+        $this->villeDEtude = $villeDEtude;
 
         return $this;
     }
 
     /**
-     * @return Collection<int, User>
+     * @return Collection<int, Etudiant>
      */
-    public function getUsers(): Collection
+    public function getEtudiants(): Collection
     {
-        return $this->users;
+        return $this->etudiants;
     }
 
-    public function addUser(User $user): self
+    public function addEtudiant(Etudiant $etudiant): static
     {
-        if (!$this->users->contains($user)) {
-            $this->users->add($user);
-            $user->setFormation($this);
+        if (!$this->etudiants->contains($etudiant)) {
+            $this->etudiants->add($etudiant);
+            $etudiant->setRefFormation($this);
         }
 
         return $this;
     }
 
-    public function removeUser(User $user): self
+    public function removeEtudiant(Etudiant $etudiant): static
     {
-        if ($this->users->removeElement($user)) {
+        if ($this->etudiants->removeElement($etudiant)) {
             // set the owning side to null (unless already changed)
-            if ($user->getFormation() === $this) {
-                $user->setFormation(null);
+            if ($etudiant->getRefFormation() === $this) {
+                $etudiant->setRefFormation(null);
             }
         }
 

@@ -13,10 +13,9 @@ class FormationType extends AbstractType
     {
         $builder
             ->add('universite')
-            ->add('formation')
-            ->add('annee')
+            ->add('formationSuivie')
             ->add('niveau')
-            ->add('ville')
+            ->add('villeDEtude')
         ;
     }
 
