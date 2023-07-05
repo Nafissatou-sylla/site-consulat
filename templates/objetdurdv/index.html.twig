@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-header">
+        <div class="section-header"><br>
         <h2>Espace de demande de Rendez-vous</h2></div>
         
         <h2 style="text-align:center">Prendre rendez-vous avec les services consulaires
@@ -35,7 +35,7 @@
     <section id="services" class="services sections-bg">
       <div class="container" data-aos="fade-up">
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-xl-4 col-md-5">
+          <div class="col-xl-3 col-md-5">
             <a href="{{path('app_rdvpourpasseport')}}">
               <div class="service-item  position-relative">
                 <img class="card-img-top" src="{{asset('assets/img/demandepassport.webp')}}" width="150px" height="200px" alt="Service passeport"><br><br>
@@ -44,11 +44,29 @@
             </a>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-5">
-            <a href="{{path('app_rdvpouretatcivil')}}">
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_rdvpourcoutume')}}">
               <div class="service-item position-relative">
-                <img class="card-img-top" src="{{asset('assets/img/etatcivil3.jpeg')}}" width="150px" height="200px" alt="Sauf conduit"><br><br>
-                <h3>Service Etat-civil</h3><br>
+                <img class="card-img-top" src="{{asset('assets/img/certificatdecoutume.jpg')}}" width="150px" height="200px" alt="Certificat de coutume"><br><br>
+                <h3>Certificat de coutume</h3><br>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+         <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_rdvpourtranscription')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/trnais.png')}}" width="150px" height="200px" alt="Transcription de naissance"><br><br>
+                <h3>Transcription de naissance</h3><br>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+         <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_rdvpour_transcription_deces')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/dece.jpg')}}" width="150px" height="200px" alt="Transcription de décès"><br><br>
+                <h3>Transcription de décès</h3><br>
               </div>
             </a>
           </div><!-- End Service Item -->
@@ -61,9 +79,6 @@
           <!------------------------------------------------------------------------------>
         </div>
       </div>
-
-         
-     
      <!-- ---------------------------------------------------- -->
       <footer id="footer"> </footer><!--/#footer-->
 
