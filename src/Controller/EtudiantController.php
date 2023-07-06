@@ -16,8 +16,7 @@ use Symfony\Component\Security\Http\Attribute\IsGranted;
 class EtudiantController extends AbstractController
 {
     #[Route('/', name: 'app_etudiant_index', methods: ['GET'])]
-    #[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants pour accéder à la liste des étudiants')]
-
+    #[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants ')]
     public function index(EtudiantRepository $etudiantRepository): Response
     {
         return $this->render('etudiant/index.html.twig', [
@@ -36,7 +35,7 @@ class EtudiantController extends AbstractController
             $etudiantRepository->save($etudiant, true);
 
             //aprés l'inscription, l'étudiant sera redirigé vers une page pour voir les informations qu'il a saisies
-            return $this->redirectToRoute('app_user_show', ['id' => $etudiant->getId()],  Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('app_etudiant_show', ['id' => $etudiant->getId()],  Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('etudiant/new.html.twig', [
@@ -46,7 +45,6 @@ class EtudiantController extends AbstractController
     }
 
     #[Route('/{id}', name: 'app_etudiant_show', methods: ['GET'])]
-    #[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants ')]
     public function show(Etudiant $etudiant): Response
     {
         return $this->render('etudiant/show.html.twig', [
