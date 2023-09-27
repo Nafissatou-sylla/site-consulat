@@ -1,0 +1,112 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="/">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Etrangers ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                                Demande de visa
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Demande de visa</h2>
+        </div>
+          <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements1" class="py-2 maeci__attachements">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div>
+                                  <img class="small-card__img ajust-big-img" src="{{asset('assets/img/infos.jpg')}}" alt="Infos" width=100px height=100px;">
+                                  <h3 class="small-card__title">Infos</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text" >
+                        <p>Depuis le 01 mai 2015, les modalités du visa d’entrée au Sénégal ont changé. Si vous êtes ressortissant d’un pays cités plus bas, vous n’avez pas besoin de visa.
+
+Il faut cependant disposer d’un passeport ou d’un laissez-passer délivré par ce pays.
+
+Ces documents doivent avoir une validité de 6 mois minimum.
+
+Si vous n’êtes pas un ressortissant d’un des pays mentionnés ci-dessous, vous devez obtenir un visa pour entrer sur le territoire Sénégalais.
+
+Les personnes disposant d’un titre de voyage pour réfugié ont également besoin de visa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+<br><br>
+
+    <!------------------------------------------------------------------------------>
+           <!-- ======= Our Services Section ======= -->
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-4 col-md-5">
+            <a href="{{path('app_effectuerunedemandevisa')}}">
+              <div class="service-item  position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/visadem.png')}}" width="150px" height="200px" alt="Demande de visa">
+                <br><br><h3>Effectuer une demande de visa</h3>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-5">
+            <a href="{{path('app_paysafricains')}}">
+              <div class="service-item position-relative">
+              <img class="card-img-top" src="{{asset('assets/img/afrique.png')}}" width="150px" height="200px" alt="Pays africains dispensés de visa"><br><br>
+                <h3>Pays africains dispensés de visa</h3>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-5">
+            <a href="{{path('app_payseuropeens')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/europe.jpg')}}" width="150px" height="200px" alt="Pays européens dispensés de visa"><br><br>
+                <h3>Pays européens dispensés de visa</h3><br>
+              </div>
+            </a>  
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section><!-- End Our Services Section ==== -->
+    <!------------------------------------------------------------------------------>
+    <br><br>
+    
+
+    
+{%block scripts%}{%endblock%}
+{%endblock%}

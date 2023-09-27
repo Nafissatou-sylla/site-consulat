@@ -1,0 +1,24 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5"><br><br>
+                <div class="section-header">
+        <h2>Espace de demande de Rendez-vous</h2></div>
+        
+        <div> Prendre rendez-vous avec les services consulaires </div>
+            <a role="button" href="{{ path('app_objetdurdv') }}">Prendre un RDV</a>
+
+     
+     </div>
+     
+     <!-- ---------------------------------------------------- -->
+     
+                {% block scripts %}      {% endblock %}
+
+     </body>
+
+     {% endblock %}
+

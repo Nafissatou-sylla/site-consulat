@@ -1,0 +1,121 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}Legalisation de documents {% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="/">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_autres_documents') }}">Autres Services ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                Légalisation de documents
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Legalisation de documents</h2>
+        </div>
+        
+        <!-- ==================================================================================  -->
+
+        <!-- benefit sections -->
+            <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements1" class="py-2 maeci__attachements">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div>
+                                  <img class="small-card__img ajust-big-img" src="{{asset('assets/img/infos.jpg')}}" alt="Infos" width=100px height=100px;">
+                                  <h3 class="small-card__title">Infos</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text"><br><br><br>
+                   <strong> Présence Obligatoire du réquérant pour toute les légalisations ;</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements2" class="py-2 maeci__attachements grey-bg ">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div><br><br><br><br>
+                                  <img class="small-card__img ajust-big-img" src="https://www.consulat.ma/sites/default/files/2018-08/Docu-a-fournir_3.png" alt="doc" data-pagespeed-url-hash="4292431242" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                  <h3 class="small-card__title">Pièces à fournir</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text" style="background-primary">
+                    <div class="section-header">     
+                        <br><h4><strong>Copies certifiées conformes</strong></h4>                             
+                                    <strong> 1: </strong>Originaux et Copies des documents à légaliser;<br>      
+                                   <strong> 2: </strong>CNI ou Passeport du requérant;<br>                                                              
+
+                                <br><h4><strong> Certifications matérielles </h4></strong>
+                                    <strong> 1: </strong>Documents à légaliser <strong>+</strong> Copies;
+                                    <br> 
+                                     <strong> 2: </strong>Passeport ou CNI <strong>+</strong> justificatifs.
+                                    <br> 
+
+                                <br><h4><strong>Actes Notariés</h4></strong>
+                                    <strong> 1: </strong>Pièce d'identité ou Passeport;<br>
+                                
+                                    <strong> 2: </strong><strong> L'Acte doit obligatoirement venir du mail du notaire; <br></strong>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;
+border-top:none !important">
+
+    <footer id="footer"> </footer><!--/#footer-->
+
+{%block scripts%}{%endblock%}
+{%endblock%}
+

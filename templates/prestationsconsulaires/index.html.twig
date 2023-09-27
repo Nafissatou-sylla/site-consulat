@@ -1,0 +1,71 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}Prestations consulaires {% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<div class="example-wrapper">
+   <!-- ======= Our Services Section ======= -->
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Prestations consulaires</h2>
+        </div>
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_servicesauxsenegalais')}}">
+              <div class="service-item  position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/passport.png')}}" width="100px" height="150px" alt="Services aux Sénégalais">
+                <h3>Services aux Sénégalais</h3>
+                <ul>
+                  <li>Passeport </li>
+                  <li>Sauf Conduit </li>
+                  <li>Etat-Civil </li> 
+                  <li>Immatriculation </li> 
+                  <li>Légalisation </li> 
+                  <li>etc... </li>   
+                </ul>
+            </a>
+          </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_demandedevisa')}}">
+            <div class="service-item position-relative">
+             <img class="card-img-top" src="{{asset('assets/img/visasn.jpg')}}" width="100px" height="150px" alt="Services aux Etrangers">
+              <h3>Services aux Etrangers</h3>
+              <ul>
+                <li>Demande de visa</li>
+              </ul><br><br><br>
+            </a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_passeport_disponible_find')}}">
+            <div class="service-item position-relative"> 
+             <img class="card-img-top" src="{{asset('assets/img/documentsdevoyage.jpg')}}" width="100px" height="150px" alt="Services aux Etrangers">
+              <h3>Passeport disponible</h3>
+              Vérifiez si votre passeport est disponible <br><br><br>
+            </a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_objetdurdv') }}">
+            <div class="service-item position-relative">
+              <img class="card-img-top" src="{{asset('assets/img/rdv.jpg')}}" width="100px" height="150px" alt="Prendre RDV">
+              <br><br><h3>Prendre RDV</h3>
+              <ul>
+                <li>Prendre un Rendez-vous</li>
+              </ul><br>
+              </a>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section><!-- End Our Services Section -->
+
+ 
+    <!-- End Our Services Section -->
+</div>
+{% endblock %}

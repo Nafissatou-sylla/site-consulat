@@ -1,0 +1,40 @@
+{% extends './home/base.html.twig' %}
+
+
+{% block body %}
+    <h3>Liste des passeports disponibles</h3><br><br>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>DateDeNaissance</th>
+                <th>LieuDeNaissance</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for passeport_disponible in passeport_disponibles %}
+            <tr>
+                <td>{{ passeport_disponible.id }}</td>
+                <td>{{ passeport_disponible.nom }}</td>
+                <td>{{ passeport_disponible.prenom }}</td>
+                <td>{{ passeport_disponible.dateDeNaissance ? passeport_disponible.dateDeNaissance|date('Y-m-d') : '' }}</td>
+                <td>{{ passeport_disponible.lieuDeNaissance }}</td>
+                <td>
+                    <a href="{{ path('app_passeport_disponible_show', {'id': passeport_disponible.id}) }}">Voir</a><br>
+                    <a href="{{ path('app_passeport_disponible_edit', {'id': passeport_disponible.id}) }}">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_passeport_disponible_new') }}">Ajouter un nouveau</a>
+{% endblock %}

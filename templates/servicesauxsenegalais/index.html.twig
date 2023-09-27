@@ -1,0 +1,87 @@
+
+{% extends './home/base.html.twig' %}
+
+  {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+{%block body%}    
+<main> 
+    <div class="special-container m-5">
+
+           <!-- ======= Our Services Section ======= -->
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Services aux Sénégalais</h2>
+        </div>
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+         <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_etatcivil')}}">
+              <div class="service-item position-relative">
+              <img class="card-img-top" src="{{asset('assets/img/etatcivil.png')}}" width="100px" height="150px" alt="Etat Civil">
+                <br><br><h3>Etat Civil</h3>
+                <ul>
+                <li>Transcription de naissance </li>
+                  <li>Carte consulaire </li>
+                  <li>Certificat de coutume </li>
+                  <li>Laissez-passer mortuaire </li>
+                  <li>etc... </li>
+                </ul>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_documentsdevoyage')}}">
+              <div class="service-item  position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/documentsdevoyage.jpg')}}" width="100px" height="150px" alt="Documents de voyages">
+                <h3>Documents de voyages</h3>
+                <ul>
+                  <li>Première demande de passeport </li>
+                  <li>Renouvellement de passeport </li>
+                  <li>Sauf conduit </li>
+                </ul>
+              </div>
+            </a>  
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_cni')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="https://senegalembassy.co.za/wp-content/uploads/2019/01/carte_biometrique_0_0.jpg" width="100px" height="150px" alt="CNI">
+                <br><br><h3>CNI</h3>
+                <ul>
+                  <li>Carte d'Identité </li>
+                  
+                </ul>
+                <br><br><br>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_autres_documents')}}">
+              <div class="service-item position-relative">
+              <img class="card-img-top" src="{{asset('assets/img/autreservice.png')}}" width="100px" height="150px" alt="Autres service">
+                <br><h3>Autres Services</h3>
+                <ul>
+                  <li>Légalisation </li>
+                  <li> Attestation de nationalité</li>
+                  <li>Etat de famille </li>
+                  etc. 
+                </ul>
+                
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+        </div>
+      </div>
+    </section><!-- End Our Services Section ==== -->
+
+     
+    
+ 
+
+</main>
+     {%endblock%}
+

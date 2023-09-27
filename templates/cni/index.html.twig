@@ -1,0 +1,69 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="/">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                               CNI
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+
+
+          <!-- ======= Our Services Section ======= -->
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Carte d'Identité</h2>
+        </div>
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-4 col-md-5">
+            <a href="{{path('app_demandecartedidentite')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="https://consulsen-paris.gouv.sn/wp-content/uploads/2022/11/cni-1.png" width="150px" height="200px" alt="Demande de Carte d'Identité">
+                <h3>Demande de Carte d'Identité</h3>
+                <p>Pour tout ressortissant sénégalais âgé d’au moins 5 ans</p>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-5">
+            <a href="{{path('app_retraitdecartedidentite')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="https://senegalembassy.co.za/wp-content/uploads/2019/01/carte_biometrique_0_0.jpg" width="150px" height="200px" alt="Retrait de carte d'Identité">
+                <h3>Retrait de carte d'Identité</h3>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section><!-- End Our Services Section ==== -->
+     </body>
+
+     {% endblock %}
+     
+     
+           

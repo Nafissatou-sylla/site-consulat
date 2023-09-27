@@ -1,0 +1,127 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}Renouvellement du passeport {% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire "><br><br>
+            <div class="breadcrumbs container" style="text-align:left">
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="/">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_servicesauxsenegalais') }}">Services aux Sénégalais ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="{{path('app_documentsdevoyage') }}">Documents de voyage ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                                Renouvellement Passeport
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Renouvellement passeport</h2>
+        </div>
+        
+        <!-- ==================================================================================  -->
+
+        <!-- benefit sections -->
+            <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements1" class="py-2 maeci__attachements">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div><br><br>
+                                  <img class="small-card__img ajust-big-img" src="{{asset('assets/img/infos.jpg')}}" alt="Infos" width=100px height=100px;">
+                                  <h3 class="small-card__title">Infos</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text">
+                        <p>Pour le  renouvellement de passeport biométrique détérioré ou de passeport biométrique perdu, une attention particulière requise par l’autorité de décision. Cela pourrait prendre du temps avant de prétendre à déposer une demande pour un nouveau passeport. La présence du signataire est obligatoire pour la légalisation de l’autorisation parentale. Pour les enfants mineures, il faut absolument une autorisation du père accompagnée de la copie de sa pièce d’identité ou de son passeport.<br>
+                        </p> 
+                        <p>Le délai de délivrance d’un passeport biométrique ordinaire est en moyenne d'1 à 2 mois.
+                        Validité du passeport : La validité du passeport biométrique est de 5 ans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;border-top:none !important">
+
+    <div id="attachements2" class="py-2 maeci__attachements grey-bg ">
+                <div class="container p-0 maeci-detailPAttachement">
+            <!-- Section -->
+            <div class="block-article">
+                <div class="row">
+                    <div class="col-lg-3 block-article__img">
+                        <div class="small-card">
+                              <div><br><br><br><br><br><br><br><br><br><br>
+                                  <img class="small-card__img ajust-big-img" src="https://www.consulat.ma/sites/default/files/2018-08/Docu-a-fournir_3.png" alt="doc" data-pagespeed-url-hash="4292431242" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                  <h3 class="small-card__title">Pièces à fournir</h3>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-9 block-article__text" style="background-primary">
+                    <div class="section-header">
+                     <h2>Passeport expiré </h2>
+                            <strong>1: </strong> Passeport expiré (Original + copie des deux premières pages deux de chaque) ;<br>
+                             <strong>2: </strong>  Carte nationale d’identité biométrique CEDEAO (Originale + une copie recto-verso deux fois) ;<br>
+                             <strong>3: </strong>  Un justificatif de domicile (Facture EDF, quittance de loyer etc…) ;<br>
+                             <strong>4: </strong>  Un timbre de 30,50 euros (paiement sur place, <strong>en espèce ou par carte bancaire</strong>) ;<br></div>
+                    <div class="section-header">
+                        <h2>Passeport perdu</h2>                  
+                         <strong>1: </strong> Deux photocopies du certificat de perte délivrée par un commissariat de police;<br>
+                         <strong>2: </strong> Carte nationale d’identité biométrique CEDEAO (Originale + une photocopie du passeport perdu);<br>
+                          <strong>3: </strong>Un justificatif de domicile en France (Facture EDF, quittance de loyer etc…);<br>
+                          <strong>4: </strong>Un timbre de 30,50 euros (paiement sur place, <strong>en espèce ou par carte bancaire</strong>);<br>                   
+                        </div>     
+                    <div class="section-header">
+                        <h2>Passeport détérioré </h2>                  
+                         <strong>1: </strong> Passeport biométrique détérioré lisible et carte nationale d’identité biométrique CEDEAO (Originale + une copie) ;<br>
+                         <strong>2: </strong> Un justificatif de domicile en France (Facture EDF, quittance de loyer etc…) ;<br>
+                          <strong>3: </strong> Un timbre de 30,50 euros (paiement sur place, <strong>en espèce ou par carte bancaire</strong>) ;<br>                        
+                    </div>                        
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+    <hr width="40%" style="display:block;border-bottom:2px solid grey !important;
+border-top:none !important">
+
+    <footer id="footer"> </footer><!--/#footer-->
+
+{%block scripts%}{%endblock%}
+{%endblock%}

@@ -1,0 +1,70 @@
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }} 
+    <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        {{form_row(form.prenom)}}
+                    </div>
+                    <div class="col-4">
+                        {{form_row(form.nom)}}
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-4">
+                        {{form_row(form.dateDeNaissance)}}
+                    </div>
+                    <div class="col-4">
+                        {{form_row(form.lieuDeNaissance)}}
+                    </div>
+                  
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        {{form_row(form.email)}}
+                    </div>
+                   <div class="col-4">
+                        {{form_row(form.telephone)}}
+                    </div>
+                </div>
+                 <br>
+                <div class="section-header"> <h2>Votre Adresse </h2>
+                <div class="row">
+                    <div class="col-6">
+                        {{form_row(form.refAdresse.adresseComplete)}}
+                    </div>
+                    <div class="col-3">
+                        {{form_row(form.refAdresse.codePostal)}}
+                    </div>
+                    <div class="col-3">
+                        {{form_row(form.refAdresse.ville)}}
+                    </div>
+                </div> 
+
+                <br>
+                <div class="section-header"> <h2>Votre Formation </h2>
+                <div class="row">
+                    <div class="col-6">
+                        {{form_row(form.refFormation.universite)}}
+                    </div>
+                    <div class="col-6">
+                        {{form_row(form.refFormation.formationSuivie)}}
+                    </div>
+                   
+                    <div class="col-6">
+                        {{form_row(form.refFormation.niveau)}}
+                    </div>
+                    <div class="col-6">
+                        {{form_row(form.refFormation.villeDEtude)}}
+                    </div>
+                </div>          
+
+                <div class=col-6>
+                    {{form_rest(form)}} 
+                </div><br><br>
+                <button class="btn btn" style="background-color:#009688">{{ button_label|default('Enregistrer') }}</button>
+
+    </div>
+{{ form_end(form) }}
+             

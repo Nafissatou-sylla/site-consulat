@@ -1,0 +1,11 @@
+{% extends './home/base.html.twig' %}
+
+ {% block titre %} Inscription {% endblock %}
+
+{% block body %}<br><br>
+    <h3>Ajouter un nouveau utilisateur</h3><br>
+
+    {{ include('user/_form.html.twig') }}
+
+    <a href="{{ path('app_user_index') }}">Liste des utilisateurs</a>
+{% endblock %}

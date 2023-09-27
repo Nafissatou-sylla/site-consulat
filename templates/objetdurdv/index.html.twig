@@ -1,0 +1,89 @@
+{% extends './home/base.html.twig' %}
+ {% block titre %}{% endblock %}
+  {% block css %}{% endblock %}
+      {% block body %}
+
+<body class="path-frontpage page-node-type-homepage">
+    <div class="special-container m-5">
+         <div class="container-fluid small guide-consulaire ">
+            <div class="breadcrumbs container" style="text-align:left"><br>
+                <div class="row">
+                    <div class="col-10">
+                        <ul class="list" style="color:grey">
+                            <li class="list-inline-item">
+                              <a class="goto-link" href="{{ path('app_servicesauxsenegalais') }}">Accueil ></a>
+                                <svg class="icon list__icon" width="12" height="12">
+                                  <use xlink:href="#icon-arrow-down"></use>
+                                </svg>
+                            </li>
+                            <li class="list-inline-item">
+                              Prise de Rendez-vous
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-header"><br>
+        <h2>Espace de demande de Rendez-vous</h2></div>
+        
+        <h2 style="text-align:center">Prendre rendez-vous avec les services consulaires
+        <br><br>Choisir l'objet du Rendez-vous</h2>
+<br><br>
+          <!------------------------------------------------------------------------------>
+          <!-- ======= Our Services Section ======= -->
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_rdvpourpasseport')}}">
+              <div class="service-item  position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/demandepassport.webp')}}" width="150px" height="200px" alt="Service passeport"><br><br>
+                <h3>Service passeport</h3>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_rdvpourcoutume')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/certificatdecoutume.jpg')}}" width="150px" height="200px" alt="Certificat de coutume"><br><br>
+                <h3>Certificat de coutume</h3><br>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+         <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_rdvpourtranscription')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/trnais.png')}}" width="150px" height="200px" alt="Transcription de naissance"><br><br>
+                <h3>Transcription de naissance</h3><br>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+
+         <div class="col-xl-3 col-md-5">
+            <a href="{{path('app_rdvpour_transcription_deces')}}">
+              <div class="service-item position-relative">
+                <img class="card-img-top" src="{{asset('assets/img/dece.jpg')}}" width="150px" height="200px" alt="Transcription de décès"><br><br>
+                <h3>Transcription de décès</h3><br>
+              </div>
+            </a>
+          </div><!-- End Service Item -->
+        </div><br>
+       
+      
+        </div>
+      </div>
+    </section><!-- End Our Services Section ==== -->
+          <!------------------------------------------------------------------------------>
+        </div>
+      </div>
+     <!-- ---------------------------------------------------- -->
+      <footer id="footer"> </footer><!--/#footer-->
+
+{%block scripts%}{%endblock%}
+{%endblock%}
+
+     
+           

@@ -1,0 +1,15 @@
+{% extends './home/base.html.twig' %}
+
+{% block body %}
+<div class="row">
+  <div class="col">
+    <br><h3 style="text-align:left">
+    Ajoutez la liste des passeports disponibles</h3><br>
+      <div class="container" style="text-align:center">
+        {{ include('passeport_disponible/_new_form.html.twig') }}
+      </div>
+  </div>
+</div>
+          
+{% endblock %}
+
